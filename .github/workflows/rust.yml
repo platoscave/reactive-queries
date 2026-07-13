@@ -20,7 +20,7 @@ jobs:
       - uses: actions-rs/cargo@v1
         with:
           command: check
-          args: --all-features
+          args: --workspace --all-features
 
   check_wasm:
     name: Check wasm32
@@ -36,7 +36,8 @@ jobs:
       - uses: actions-rs/cargo@v1
         with:
           command: check
-          args: --all-features --lib --target wasm32-unknown-unknown
+          # Only ui_panels targets wasm — app/bevy_scene/data are native-only (Bevy windowing, native_db).
+          args: --all-features --lib --target wasm32-unknown-unknown -p ui_panels
 
   test:
     name: Test Suite
@@ -52,7 +53,7 @@ jobs:
       - uses: actions-rs/cargo@v1
         with:
           command: test
-          args: --lib
+          args: --workspace --lib
 
   fmt:
     name: Rustfmt
@@ -84,7 +85,7 @@ jobs:
       - uses: actions-rs/cargo@v1
         with:
           command: clippy
-          args: -- -D warnings
+          args: --workspace -- -D warnings
 
   trunk:
     name: trunk
@@ -94,13 +95,14 @@ jobs:
       - uses: actions-rs/toolchain@v1
         with:
           profile: minimal
-          toolchain: 1.92.0
+          toolchain: stable
           target: wasm32-unknown-unknown
           override: true
       - name: Download and install Trunk binary
         run: wget -qO- https://github.com/thedodd/trunk/releases/latest/download/trunk-x86_64-unknown-linux-gnu.tar.gz | tar -xzf-
       - name: Build
-        run: ./trunk build
+        working-directory: ui_panels
+        run: ../trunk build
 
   build:
     runs-on: ${{ matrix.os }}
@@ -142,4 +144,7 @@ jobs:
         with:
           use-cross: true
           command: build
-          args: --verbose --release --target=${{ matrix.TARGET }}
+          # Scoped to ui_panels: it's the portable, cross-target-friendly crate.
+          # app/bevy_scene (Bevy + native_db) are unlikely to cross-compile cleanly
+          # to musl/aarch64 targets without significant extra toolchain setup.
+          args: --verbose --release --target=${{ matrix.TARGET }} -p ui_panels
