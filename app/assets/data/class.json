@@ -1,0 +1,232 @@
+[
+    {
+        "key": "universe",
+        "title": "Process Universe",
+        "description": "<p>The root of all classes and objects</p>",
+        "properties": {
+            "key": {
+                "description": "<p>Base32 identifier.</p>",
+                "pattern": "[a-z][a-z0-9-]{0,17}",
+                "title": "key",
+                "type": "string"
+            },
+            "name": {
+                "placeholder": "Provide a name",
+                "maxLength": 1000,
+                "minLength": 0,
+                "title": "Name",
+                "type": "string"
+            },
+            "classId": {
+                "pattern": "[a-z][a-z0-9-]{0,17}",
+                "argoQuery": {
+                    "selector": "Subclasses",
+                    "where": {
+                        "classId": "universe"
+                    },
+                    "sortBy": "title"
+                },
+                "title": "Class",
+                "type": "string"
+            },
+            "description": {
+                "placholder": "Add a description",
+                "maxLength": 10000,
+                "contentMediaType": "text/html",
+                "minLength": 0,
+                "title": "Description",
+                "type": "string"
+            },
+            "icon": {
+                "maxLength": 2000,
+                "contentMediaType": "image/svg+xml",
+                "minLength": 0,
+                "title": "Icon",
+                "type": "string"
+            }
+        },
+        "required": [
+            "key",
+            "classId"
+        ],
+        "type": "object",
+        "classIcon": "ProcessUniverse.svg"
+    },
+    {
+        "key": "agreements",
+        "title": "Agreements",
+        "description": "<p>Contracts between accounts about resources</p>",
+        "classIcon": "Agreements.svg",
+        "superClassId": "universe",
+        "properties": {
+            "startDate": {
+                "title": "Request Date",
+                "type": "string"
+            },
+            "expirationDate": {
+                "title": "Expiration Date",
+                "type": "string"
+            },
+            "amount": {
+                "title": "Amount",
+                "type": "number"
+            },
+            "currency": {
+                "title": "Currency",
+                "type": "string"
+            },
+            "consumerId": {
+                "pattern": "[a-z][a-z0-9-]{0,17}",
+                "argoQuery": {
+                    "selector": "Subclasses",
+                    "where": {
+                        "classId": "accounts"
+                    },
+                    "idsArrayPath": {
+                        "path": "$[*].key",
+                        "indexName": "classId"
+                    },
+                    "sortBy": "name"
+                },
+                "title": "Consumer",
+                "type": "string"
+            },
+            "providerId": {
+                "pattern": "[a-z][a-z0-9-]{0,17}",
+                "argoQuery": {
+                    "selector": "Subclasses",
+                    "where": {
+                        "classId": "accounts"
+                    },
+                    "idsArrayPath": {
+                        "path": "$[*].key",
+                        "indexName": "classId"
+                    },
+                    "sortBy": "name"
+                },
+                "title": "Provider",
+                "type": "string"
+            },
+            "assetId": {
+                "pattern": "[a-z][a-z0-9-]{0,17}",
+                "argoQuery": {
+                    "selector": "Subclasses",
+                    "where": {
+                        "classId": "assets"
+                    },
+                    "idsArrayPath": {
+                        "path": "$[*].key",
+                        "indexName": "classId"
+                    },
+                    "sortBy": "name"
+                },
+                "title": "Asset",
+                "type": "string"
+            },
+            "propositionId": {
+                "pattern": "[a-z][a-z0-9-]{0,17}",
+                "argoQuery": {
+                    "selector": "Subclasses",
+                    "where": {
+                        "classId": "processes"
+                    },
+                    "idsArrayPath": {
+                        "path": "$[*].key",
+                        "indexName": "classId"
+                    },
+                    "sortBy": "name"
+                },
+                "title": "Agreememt Process",
+                "type": "string"
+            },
+            "currentStepId": {
+                "pattern": "[a-z][a-z0-9-]{0,17}",
+                "argoQuery": {
+                    "selector": "Subclasses",
+                    "where": {
+                        "classId": "steps"
+                    },
+                    "idsArrayPath": {
+                        "path": "$[*].key",
+                        "indexName": "classId"
+                    },
+                    "sortBy": "name"
+                },
+                "title": "Step",
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    {
+        "key": "resources",
+        "title": "Resources",
+        "description": "<p>Things owned by users/organizations</p>",
+        "superClassId": "universe",
+        "properties": {
+            "ownerId": {
+                "pattern": "[a-z][a-z0-9-]{0,17}",
+                "argoQuery": {
+                    "selector": "Subclasses",
+                    "where": {
+                        "classId": "accounts"
+                    },
+                    "idsArrayPath": {
+                        "path": "$[*].key",
+                        "indexName": "classId"
+                    },
+                    "sortBy": "name"
+                },
+                "title": "Owner",
+                "type": "string"
+            }
+        },
+        "required": [
+            "ownerId"
+        ],
+        "type": "object"
+    },
+    {
+        "key": "rental-agree",
+        "title": "Rental Agreements",
+        "description": "<p>Contracts between accounts about resources</p>",
+        "classIcon": "Agreements.svg",
+        "superClassId": "agreements",
+        "properties": {
+            "recardianContract": {
+                "const": "<div><h1>Rental Agreement</h1><p><a href='${locationStr}${providerId}.smaraspaled'>${providerName}</a> promises to deliver <a href='${locationStr}${assestId}.smaraspaled'>${assetName}</a> to <a href='${locationStr}${consumerId}.smaraspaled'>${consumerName}</a> by ${expirationDate} for the amount of ${amount} ${currency}</p><ul><li>Proposition: <a href='${locationStr}${propositionId}.smaraspaled'>${propositionName}</a>  </li><li>Process: <a href='${locationStr}${processId}.smaraspaled'>${processName}</a>  </li><li>Current Step: <a href='${locationStr}${currentStepId}.smaraspaled'>${currentStepName}</a>  </li></ul></div>",
+                "title": "Recardian Contract",
+                "contentMediaType": "text/html",
+                "type": "string"
+            },
+            "unitOfTime": {
+                "enum": [
+                    "Half Day",
+                    "Day",
+                    "Week",
+                    "Month",
+                    "Year"
+                ],
+                "title": "Duration",
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    {
+        "key": "service-agree",
+        "title": "Service Agreements",
+        "description": "<p>Contracts between accounts about resources</p>",
+        "classIcon": "Agreements.svg",
+        "superClassId": "agreements",
+        "properties": {
+            "recardianContract": {
+                "const": "<div><h1>Service Agreement</h1><p><a href='${locationStr}${providerId}.smaraspaled'>${providerName}</a> promises to deliver <a href='${locationStr}${assestId}.smaraspaled'>${assetName}</a> to <a href='${locationStr}${consumerId}.smaraspaled'>${consumerName}</a> by ${expirationDate} for the amount of ${amount} ${currency}</p><ul><li>Proposition: <a href='${locationStr}${propositionId}.smaraspaled'>${propositionName}</a>  </li><li>Process: <a href='${locationStr}${processId}.smaraspaled'>${processName}</a>  </li><li>Current Step: <a href='${locationStr}${currentStepId}.smaraspaled'>${currentStepName}</a>  </li></ul></div>",
+                "title": "Recardian Contract",
+                "contentMediaType": "text/html",
+                "type": "string"
+            }
+        },
+        "type": "object"
+    }
+]

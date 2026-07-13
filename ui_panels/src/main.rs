@@ -20,9 +20,9 @@ fn main() -> eframe::Result {
         ..Default::default()
     };
     eframe::run_native(
-        "eframe template",
+        "Reactive Queries",
         native_options,
-        Box::new(|cc| Ok(Box::new(reactive_queries::TemplateApp::new(cc)))),
+        Box::new(|cc| Ok(Box::new(ui_panels::TemplateApp::new(cc)))),
     )
 }
 

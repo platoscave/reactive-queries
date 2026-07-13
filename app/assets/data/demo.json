@@ -1,0 +1,130 @@
+[
+    {
+        "key": "universe",
+        "title": "Universe",
+        "properties": {
+            "key": {
+                "description": "<p>Base32 identifier.</p>",
+                "pattern": "[a-z][a-z0-9-]{0,17}",
+                "title": "key",
+                "type": "string"
+            },
+            "name": {
+                "placeholder": "Provide a name",
+                "maxLength": 1000,
+                "minLength": 0,
+                "title": "Name",
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    {
+        "key": "humans",
+        "title": "Humans",
+        "superClassId": "universe",
+        "properties": {
+            "key": {
+                "description": "<p>Base32 identifier.</p>",
+                "pattern": "[a-z][a-z0-9-]{0,17}",
+                "title": "key",
+                "type": "string"
+            },
+            "name": {
+                "placeholder": "Provide a name",
+                "maxLength": 1000,
+                "minLength": 0,
+                "title": "Name",
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    {
+        "key": "pets",
+        "title": "Pets",
+        "superClassId": "universe",
+        "properties": {
+            "key": {
+                "description": "<p>Base32 identifier.</p>",
+                "pattern": "[a-z][a-z0-9-]{0,17}",
+                "title": "key",
+                "type": "string"
+            },
+            "name": {
+                "placeholder": "Provide a name",
+                "maxLength": 1000,
+                "minLength": 0,
+                "title": "Name",
+                "type": "string"
+            },
+            "ownerId": {
+                "pattern": "[a-z][a-z0-9-]{0,17}",
+                "argoQuery": {
+                    "selector": "Subclasses",
+                    "where": {
+                        "classId": "humans"
+                    },
+                    "sortBy": "title"
+                },
+                "title": "owned by",
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    {
+        "key": "cats",
+        "title": "Cats",
+        "superClassId": "pets",
+        "properties": {
+            "key": {
+                "description": "<p>Base32 identifier.</p>",
+                "pattern": "[a-z][a-z0-9-]{0,17}",
+                "title": "key",
+                "type": "string"
+            },
+            "name": {
+                "placeholder": "Provide a name",
+                "maxLength": 1000,
+                "minLength": 0,
+                "title": "Name",
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    {
+        "key": "dogs",
+        "title": "Dogs",
+        "superClassId": "pets",
+        "properties": {
+            "key": {
+                "description": "<p>Base32 identifier.</p>",
+                "pattern": "[a-z][a-z0-9-]{0,17}",
+                "title": "key",
+                "type": "string"
+            },
+            "name": {
+                "placeholder": "Provide a name",
+                "maxLength": 1000,
+                "minLength": 0,
+                "title": "Name",
+                "type": "string"
+            },
+            "ownerId": {
+                "pattern": "[a-z][a-z0-9-]{0,17}",
+                "argoQuery": {
+                    "selector": "Subclasses",
+                    "where": {
+                        "classId": "humans"
+                    },
+                    "sortBy": "title"
+                },
+                "title": "favoite human",
+                "type": "string"
+            }
+        },
+        "type": "object"
+    }
+]

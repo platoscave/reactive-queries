@@ -1,0 +1,14 @@
+[package]
+name = "data"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+native_db = { workspace = true }
+native_model = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+once_cell = "1"

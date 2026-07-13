@@ -1,0 +1,31 @@
+[package]
+name = "bevy_scene"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+data = { path = "../data" }
+bevy = { workspace = true, features = ["dynamic_linking", "bevy_picking", "jpeg"] }
+bevy_panorbit_camera = "0.35.0"
+bevy_skybox = "0.7.0"
+image = { version = "0.25", default-features = false, features = ["png"] }
+itertools = "0.15.0"
+mesh = "0.5.2"
+bevy_asset_loader = "0.27.0"
+serde = { workspace = true }
+serde_json = { workspace = true }
+procedural_modelling = { version = "0.5.0", features = ["bevy"] }
+bevy_procedural_meshes = "0.19.0"
+bevy_fontmesh = "0.6.0"
+bevy-inspector-egui = "0.37.0"
+bevy_egui = { workspace = true }
+bevy_common_assets = { version = "0.17.0", features = ["json"] }
+bevy_render = "0.19.0"
+bevy_asset = "0.19.0"
+
+[dev-dependencies]
+bevy_flycam = "0.18"
+rand = "0.10.2"
