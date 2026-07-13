@@ -8,9 +8,6 @@ use crate::skybox_plugin::*;
 use bevy::prelude::Pointer;
 use bevy::prelude::*;
 use bevy_panorbit_camera::{PanOrbitCamera, PanOrbitCameraPlugin};
-//use bevy_skybox::{SkyboxCamera, SkyboxPlugin};
-
-//pub use skybox_plugin::*;
 
 #[derive(Component)]
 pub struct MainCamera;
