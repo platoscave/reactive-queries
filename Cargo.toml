@@ -11,14 +11,17 @@ rust-version = "1.92"
 
 [workspace.dependencies]
 native_db = "0.8"
-# version tied to native_db
-native_model = "0.4.20"
+native_model = "0.4.20" # version dependant on native_db. don't upgrade without checking.
 serde = { version = "1", features = ["derive"] }
-bevy = "0.19"
-# version tied to eframe
-bevy_egui = "0.40"
-# version tied to eframe
-egui = "0.34"
+# We must un-feature audio for Github pages build
+bevy = { version = "0.19", workspace = true, default-features = false, features = [
+    "3d",
+    "bevy_picking",
+    "dynamic_linking",
+    "jpeg",
+] }
+bevy_egui = "0.40" # version dependant on native_db. don't upgrade without checking.
+egui = "0.34" # version dependant on native_db. don't upgrade without checking.
 serde_json = "1.0.150"
 
 [profile.release]

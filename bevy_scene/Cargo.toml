@@ -7,8 +7,8 @@ license.workspace = true
 rust-version.workspace = true
 
 [dependencies]
+bevy = { workspace = true }
 data = { path = "../data" }
-bevy = { workspace = true, features = ["dynamic_linking", "bevy_picking", "jpeg"] }
 bevy_panorbit_camera = "0.35.0"
 bevy_skybox = "0.7.0"
 image = { version = "0.25", default-features = false, features = ["png"] }
