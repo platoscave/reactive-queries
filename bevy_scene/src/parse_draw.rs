@@ -12,7 +12,7 @@ mod spawn;
 // Re-export everything
 pub use associations::*; // so crate::parse_draw::ResolvedAssociation still works
 use collapse::*;
-pub use components::*; 
+pub use components::*;
 use layout::*;
 use spawn::*;
 

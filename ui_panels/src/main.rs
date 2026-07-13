@@ -52,7 +52,7 @@ fn main() {
             .start(
                 canvas,
                 web_options,
-                Box::new(|cc| Ok(Box::new(reactive_queries::TemplateApp::new(cc)))),
+                Box::new(|cc| Ok(Box::new(ui_panels::TemplateApp::new(cc)))),
             )
             .await;
 

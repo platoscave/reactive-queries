@@ -7,8 +7,13 @@ pub fn get_by_key(db: &Database<'_>, key: &str) -> Option<ArgonautEntry> {
 }
 
 pub fn get_by_class_id(db: &Database<'_>, class_id: &str) -> Vec<ArgonautEntry> {
-    let Ok(r) = db.r_transaction() else { return Vec::new(); };
-    let Ok(iter) = r.scan().secondary::<ArgonautEntry>(ArgonautEntryKey::class_id) else {
+    let Ok(r) = db.r_transaction() else {
+        return Vec::new();
+    };
+    let Ok(iter) = r
+        .scan()
+        .secondary::<ArgonautEntry>(ArgonautEntryKey::class_id)
+    else {
         return Vec::new();
     };
     let Ok(matches) = iter.start_with(class_id.to_string()) else {
@@ -18,8 +23,13 @@ pub fn get_by_class_id(db: &Database<'_>, class_id: &str) -> Vec<ArgonautEntry> 
 }
 
 pub fn get_by_super_class_id(db: &Database<'_>, super_class_id: &str) -> Vec<ArgonautEntry> {
-    let Ok(r) = db.r_transaction() else { return Vec::new(); };
-    let Ok(iter) = r.scan().secondary::<ArgonautEntry>(ArgonautEntryKey::super_class_id) else {
+    let Ok(r) = db.r_transaction() else {
+        return Vec::new();
+    };
+    let Ok(iter) = r
+        .scan()
+        .secondary::<ArgonautEntry>(ArgonautEntryKey::super_class_id)
+    else {
         return Vec::new();
     };
     let Ok(matches) = iter.start_with(super_class_id.to_string()) else {
@@ -29,8 +39,14 @@ pub fn get_by_super_class_id(db: &Database<'_>, super_class_id: &str) -> Vec<Arg
 }
 
 pub fn get_all(db: &Database<'_>) -> Vec<ArgonautEntry> {
-    let Ok(r) = db.r_transaction() else { return Vec::new(); };
-    let Ok(iter) = r.scan().primary::<ArgonautEntry>() else { return Vec::new(); };
-    let Ok(all) = iter.all() else { return Vec::new(); };
+    let Ok(r) = db.r_transaction() else {
+        return Vec::new();
+    };
+    let Ok(iter) = r.scan().primary::<ArgonautEntry>() else {
+        return Vec::new();
+    };
+    let Ok(all) = iter.all() else {
+        return Vec::new();
+    };
     all.filter_map(Result::ok).collect()
 }

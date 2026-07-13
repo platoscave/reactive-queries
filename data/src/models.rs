@@ -1,5 +1,5 @@
-use native_db::{native_db, ToKey};
-use native_model::{native_model, Model};
+use native_db::{ToKey, native_db};
+use native_model::{Model, native_model};
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
 

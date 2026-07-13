@@ -1,11 +1,11 @@
 mod scene_viewport;
 
 use crate::scene_viewport::SceneTexture;
+use bevy::input::common_conditions::input_toggle_active;
 use bevy::prelude::*;
 use bevy_egui::{EguiContexts, EguiPlugin, EguiPrimaryContextPass, EguiTextureHandle, egui};
-use bevy::input::common_conditions::input_toggle_active;
-use bevy_inspector_egui::quick::WorldInspectorPlugin;
 use bevy_fontmesh::prelude::*;
+use bevy_inspector_egui::quick::WorldInspectorPlugin;
 
 pub fn run() {
     App::new()

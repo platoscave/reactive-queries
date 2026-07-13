@@ -14,7 +14,7 @@ native_db = "0.8"
 native_model = "0.4.20" # version dependant on native_db. don't upgrade without checking.
 serde = { version = "1", features = ["derive"] }
 # We must un-feature audio for Github pages build
-bevy = { version = "0.19", workspace = true, default-features = false, features = [
+bevy = { version = "0.19", default-features = false, features = [
     "3d",
     "bevy_picking",
     "dynamic_linking",

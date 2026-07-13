@@ -22,7 +22,6 @@ impl Default for TemplateApp {
 impl TemplateApp {
     /// Called once before the first frame.
     pub fn new(cc: &eframe::CreationContext<'_>) -> Self {
-        
         // Dark theme: very dark blue
         let mut dark_visuals = egui::Visuals::dark();
         dark_visuals.panel_fill = egui::Color32::from_rgb(5, 10, 40);
@@ -33,8 +32,9 @@ impl TemplateApp {
         light_visuals.window_fill = egui::Color32::from_rgb(225, 235, 255);
 
         cc.egui_ctx.set_visuals_of(egui::Theme::Dark, dark_visuals);
-        cc.egui_ctx.set_visuals_of(egui::Theme::Light, light_visuals);
-        
+        cc.egui_ctx
+            .set_visuals_of(egui::Theme::Light, light_visuals);
+
         // Load previous app state (if any).
         // Note that you must enable the `persistence` feature for this to work.
         if let Some(storage) = cc.storage {

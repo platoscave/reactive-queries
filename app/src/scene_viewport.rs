@@ -1,5 +1,5 @@
-use bevy::prelude::*;
 use bevy::camera::RenderTarget; // <-- moved from bevy::render::camera
+use bevy::prelude::*;
 use bevy::render::render_resource::{Extent3d, TextureDimension, TextureFormat, TextureUsages};
 use bevy_egui::egui;
 
@@ -10,7 +10,11 @@ pub struct SceneTexture {
 }
 
 pub fn setup_render_target(mut commands: Commands, mut images: ResMut<Assets<Image>>) {
-    let size = Extent3d { width: 800, height: 600, depth_or_array_layers: 1 };
+    let size = Extent3d {
+        width: 800,
+        height: 600,
+        depth_or_array_layers: 1,
+    };
 
     let mut image = Image::new_fill(
         size,
@@ -29,7 +33,10 @@ pub fn setup_render_target(mut commands: Commands, mut images: ResMut<Assets<Ima
         RenderTarget::Image(image_handle.clone().into()), // <-- separate component now, not Camera { target: ... }
     ));
 
-    commands.insert_resource(SceneTexture { image_handle, egui_texture_id: None });
+    commands.insert_resource(SceneTexture {
+        image_handle,
+        egui_texture_id: None,
+    });
 }
 
 pub fn show(ui: &mut egui::Ui, scene_texture: &SceneTexture) {
