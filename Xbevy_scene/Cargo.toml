@@ -1,5 +1,5 @@
 [package]
-name = "bevy_scene"
+name = "scene_builder"
 version.workspace = true
 edition.workspace = true
 authors.workspace = true
@@ -7,13 +7,29 @@ license.workspace = true
 rust-version.workspace = true
 
 [dependencies]
-bevy = { workspace = true }
+data = { path = "../data" }
+# We must un-feature audio and not use dynamic_linking for wasm32 build e.g. gh-pages
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+bevy = { version = "0.19", default-features = false, features = [
+    "3d",
+    "bevy_picking",
+    "dynamic_linking",
+    "jpeg",
+] }
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+bevy = { version = "0.19", default-features = false, features = [
+    "3d",
+    "bevy_picking",
+    "jpeg",
+] }
 data = { path = "../data" }
 bevy_panorbit_camera = "0.35.0"
 # bevy_skybox = "0.7.0"
 image = { version = "0.25", default-features = false, features = ["png"] }
 itertools = "0.15.0"
-mesh = "0.5.2"
+#mesh = "0.5.2"
+#bevy_fontmesh = "0.6.0"
 bevy_asset_loader = "0.27.0"
 serde = { workspace = true }
 serde_json = { workspace = true }

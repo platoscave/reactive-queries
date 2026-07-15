@@ -1,8 +1,6 @@
 use native_db::{Builder, Database, Models};
 use once_cell::sync::Lazy;
 use serde_json::Value;
-use std::fs;
-use std::path::Path;
 
 pub mod models;
 pub mod queries;
@@ -17,20 +15,24 @@ pub static MODELS: Lazy<Models> = Lazy::new(|| {
 });
 
 /// Open (or create) the on-disk database at `db_path`.
-pub fn open_db(db_path: &str) -> Database<'static> {
+// pub fn open_db(db_path: &str) -> Database<'static> {
+//     Builder::new()
+//         .create(&MODELS, db_path)
+//         .expect("failed to open/create database")
+// }
+pub fn open_db() -> Database<'static> {
     Builder::new()
-        .create(&MODELS, db_path)
-        .expect("failed to open/create database")
+        .create_in_memory(&MODELS)
+        .expect("failed to create in-memory database")
 }
 
-/// Parse assets/argonaut.json and insert every entry into the database.
+/// Parse the embedded argonaut.json and insert every entry into the database.
 /// Call once at startup, after `open_db`.
-pub fn load_argonaut_json(db: &Database<'_>, json_path: &Path) -> Result<usize, String> {
-    let text = fs::read_to_string(json_path)
-        .map_err(|e| format!("failed to read {}: {e}", json_path.display()))?;
+pub fn load_argonaut_json(db: &Database<'_>) -> Result<usize, String> {
+    let text = include_str!("../../app/assets/data/argonaut.json");
 
-    let value: Value = serde_json::from_str(&text)
-        .map_err(|e| format!("failed to parse {}: {e}", json_path.display()))?;
+    let value: Value =
+        serde_json::from_str(text).map_err(|e| format!("failed to parse argonaut.json: {e}"))?;
 
     let array = value
         .as_array()

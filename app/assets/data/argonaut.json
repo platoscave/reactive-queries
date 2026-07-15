@@ -1,0 +1,101 @@
+[
+    {
+        "key": "xfu7bony",
+        "name": "Document Tree Master Detail",
+        "classId": "pages",
+        "layout": "Master Detail",
+        "divider": "Vertical",
+        "ownerId": "argonaut",
+        "tabs": [
+            {
+                "name": "Document Tree",
+                "widgets": [
+                    {
+                        "widgetType": "Tree",
+                        "name": "Document Tree",
+                        "viewId": "sptshrapa"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "mm4nurerors",
+        "name": "Document Form Page",
+        "classId": "pages",
+        "layout": "Page",
+        "ownerId": "argonaut",
+        "tabs": [
+            {
+                "name": "Document",
+                "widgets": [
+                    {
+                        "widgetType": "Document",
+                        "name": "Document Form",
+                        "viewId": "watontcky"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "sptshrapa",
+        "name": "Document View",
+        "classId": "views",
+        "ownerId": "argonaut",
+        "queryId": "nochickn335",
+        "type": "object"
+    },
+    {
+        "key": "watontcky",
+        "name": "Document Form View",
+        "classId": "views",
+        "ownerId": "argonaut",
+        "properties": {
+            "name": {},
+            "description": {},
+            "subParagraphIds": {
+                "items": {
+                    "properties": {
+                        "paragraphId": {}
+                    }
+                }
+            }
+        },
+        "baseClassId": "paragraphs",
+        "type": "object"
+    },
+    {
+        "key": "nochickn335",
+        "name": "First Paragraphs Query",
+        "classId": "queries",
+        "ownerId": "argonaut",
+        "selector": "Where Clause",
+        "nodesPageId": "mm4nurerors",
+        "where": {
+            "key": "$fk"
+        },
+        "idsArrayPath": {
+            "path": "$[*].subParagraphIds[*]",
+            "indexName": "key"
+        },
+        "subQueryIds": [
+            "nelownar"
+        ]
+    },
+    {
+        "key": "nelownar",
+        "name": "Subparagraphs Query",
+        "classId": "queries",
+        "ownerId": "argonaut",
+        "selector": "Context Object",
+        "nodesPageId": "mm4nurerors",
+        "subQueryIds": [
+            "nelownar"
+        ],
+        "idsArrayPath": {
+            "path": "$.subParagraphIds[*]",
+            "indexName": "key"
+        }
+    }
+]

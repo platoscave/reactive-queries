@@ -16,13 +16,23 @@ path = "src/main.rs"
 
 [dependencies]
 data = { path = "../data" }
-bevy_scene = { path = "../bevy_scene" }
+scene_builder = { path = "../scene_builder" }
 ui_panels = { path = "../ui_panels" }
-
-bevy = { workspace = true }
 bevy_egui = { workspace = true }
 egui = { workspace = true }
 serde = { workspace = true }
-
 bevy_fontmesh = "0.6.0"
 bevy-inspector-egui = "0.37.0"
+
+
+# For wasm32 build (needed for gh_pages) we must un-feature audio.
+# instead of default we specify which features we need
+bevy = { version = "0.19", default-features = false, features = [
+    "3d",
+    "bevy_picking",
+    "bevy_state",
+    "jpeg",
+] }
+# dynamic_linking speeds up compile times. It can not be used in wasm32 builds.
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+bevy = { version = "0.19", features = ["dynamic_linking"] }

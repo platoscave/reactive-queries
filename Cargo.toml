@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["data", "bevy_scene", "ui_panels", "app"]
+members = ["data", "scene_builder", "ui_panels", "app"]
 
 [workspace.package]
 version = "0.1.0"
@@ -13,13 +13,7 @@ rust-version = "1.92"
 native_db = "0.8"
 native_model = "0.4.20" # version dependant on native_db. don't upgrade without checking.
 serde = { version = "1", features = ["derive"] }
-# We must un-feature audio for Github pages build
-bevy = { version = "0.19", default-features = false, features = [
-    "3d",
-    "bevy_picking",
-    "dynamic_linking",
-    "jpeg",
-] }
+bevy = "0.19"
 bevy_egui = "0.40" # version dependant on native_db. don't upgrade without checking.
 egui = "0.34" # version dependant on native_db. don't upgrade without checking.
 serde_json = "1.0.150"

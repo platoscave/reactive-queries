@@ -37,7 +37,7 @@ jobs:
       - uses: actions-rs/cargo@v1
         with:
           command: check
-          # Only ui_panels targets wasm — app/bevy_scene/data are native-only (Bevy windowing, native_db).
+          # Only ui_panels targets wasm — app/scene_builder/data are native-only (Bevy windowing, native_db).
           args: --all-features --lib --target wasm32-unknown-unknown -p ui_panels
 
   test:

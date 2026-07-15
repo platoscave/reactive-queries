@@ -16,10 +16,10 @@ pub fn run() {
             WorldInspectorPlugin::default().run_if(input_toggle_active(false, KeyCode::Escape)),
         )
         // Lights
-        .add_plugins(bevy_scene::LightsPlugin)
-        .add_plugins(bevy_scene::LoadingPlugin)
-        .add_plugins(bevy_scene::ParseDrawPlugin)
-        .add_plugins(bevy_scene::SkyboxFlytoCameraPlugin)
+        .add_plugins(scene_builder::LightsPlugin)
+        .add_plugins(scene_builder::LoadingPlugin)
+        .add_plugins(scene_builder::ParseDrawPlugin)
+        .add_plugins(scene_builder::SkyboxFlytoCameraPlugin)
         .add_systems(Startup, scene_viewport::setup_render_target)
         .add_systems(EguiPrimaryContextPass, draw_ui)
         .run();
@@ -49,7 +49,7 @@ fn draw_ui(
         });
 
         // Remaining central area shows the embedded 3D scene
-        scene_viewport::show(ui, &scene_texture);
+        scene_viewport::show(ui, scene_texture.as_ref());
     });
 
     Ok(())
