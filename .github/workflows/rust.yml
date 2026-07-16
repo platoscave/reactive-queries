@@ -12,7 +12,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: sudo apt-get update && sudo apt-get install -y libudev-dev
+      # libudev-dev: needed by bevy_gilrs (gamepad input), bundled into Bevy's
+      # "3d" feature profile via its "platform" collection.
+      # libasound2-dev: needed by bevy_audio -> rodio -> cpal -> alsa-sys.
+      # We disable audio on our own `bevy` entry, but Cargo's feature
+      # unification means if ANY crate in the tree (bevy_fontmesh,
+      # bevy_panorbit_camera, bevy_procedural_meshes, procedural_modelling)
+      # requests bevy's default features, that request wins for the whole
+      # shared build — so audio ends up enabled regardless, and needs its
+      # system library present to compile on Linux.
+      - run: sudo apt-get update && sudo apt-get install -y libudev-dev libasound2-dev
       - uses: actions-rs/toolchain@v1
         with:
           profile: minimal
@@ -37,7 +46,11 @@ jobs:
       - uses: actions-rs/cargo@v1
         with:
           command: check
-          # Only ui_panels targets wasm — app/scene_builder/data are native-only (Bevy windowing, native_db).
+          # Only ui_panels targets wasm cleanly on its own; app/scene_builder
+          # are also wasm-compatible (confirmed via cargo check), but this
+          # job stays scoped to ui_panels for a fast, minimal-dependency
+          # sanity check. cpal uses a Web Audio backend on wasm, not alsa,
+          # so no system packages are needed here regardless.
           args: --all-features --lib --target wasm32-unknown-unknown -p ui_panels
 
   test:
@@ -50,7 +63,7 @@ jobs:
           profile: minimal
           toolchain: stable
           override: true
-      - run: sudo apt-get update && sudo apt-get install -y libxcb-render0-dev libxcb-shape0-dev libxcb-xfixes0-dev libxkbcommon-dev libssl-dev libudev-dev
+      - run: sudo apt-get update && sudo apt-get install -y libxcb-render0-dev libxcb-shape0-dev libxcb-xfixes0-dev libxkbcommon-dev libssl-dev libudev-dev libasound2-dev
       - uses: actions-rs/cargo@v1
         with:
           command: test
@@ -77,4 +90,83 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: sudo apt-get update && sudo apt-get install
+      - run: sudo apt-get update && sudo apt-get install -y libudev-dev libasound2-dev
+      - uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
+          components: clippy
+      - uses: actions-rs/cargo@v1
+        with:
+          command: clippy
+          args: --workspace -- -D warnings
+
+  trunk:
+    name: trunk
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          target: wasm32-unknown-unknown
+          override: true
+      - name: Download and install Trunk binary
+        run: wget -qO- https://github.com/thedodd/trunk/releases/latest/download/trunk-x86_64-unknown-linux-gnu.tar.gz | tar -xzf-
+      - name: Build
+        working-directory: ui_panels
+        run: ../trunk build
+
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-latest
+            TARGET: aarch64-apple-darwin
+            USE_CROSS: false
+
+          - os: macos-latest
+            TARGET: x86_64-apple-darwin
+            USE_CROSS: false
+
+          - os: ubuntu-latest
+            TARGET: arm-unknown-linux-musleabihf
+            USE_CROSS: true
+
+          - os: ubuntu-latest
+            TARGET: armv7-unknown-linux-musleabihf
+            USE_CROSS: true
+
+          - os: ubuntu-latest
+            TARGET: x86_64-unknown-linux-musl
+            USE_CROSS: true
+
+          - os: windows-latest
+            TARGET: x86_64-pc-windows-msvc
+            EXTENSION: .exe
+            USE_CROSS: false
+
+    steps:
+      - name: Building ${{ matrix.TARGET }}
+        run: echo "${{ matrix.TARGET }}"
+
+      - uses: actions/checkout@master
+      - uses: actions-rs/toolchain@v1.0.1
+        with:
+          toolchain: stable
+          target: ${{ matrix.TARGET }}
+          override: true
+
+      - uses: actions-rs/cargo@v1
+        with:
+          use-cross: ${{ matrix.USE_CROSS }}
+          command: build
+          # Scoped to ui_panels: it's the portable, cross-target-friendly crate.
+          # app/scene_builder (Bevy + native_db) are unlikely to cross-compile
+          # cleanly to musl/aarch64 targets without significant extra toolchain
+          # setup (and cross's Linux containers can't build MSVC targets at all).
+          args: --verbose --release --target=${{ matrix.TARGET }} -p ui_panels
