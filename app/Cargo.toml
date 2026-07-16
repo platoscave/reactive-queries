@@ -18,21 +18,31 @@ path = "src/main.rs"
 data = { path = "../data" }
 scene_builder = { path = "../scene_builder" }
 ui_panels = { path = "../ui_panels" }
-bevy_egui = { workspace = true }
 egui = { workspace = true }
 serde = { workspace = true }
 bevy_fontmesh = "0.6.0"
 bevy-inspector-egui = "0.37.0"
 
-
-# For wasm32 build (needed for gh_pages) we must un-feature audio.
-# instead of default we specify which features we need
+# Base bevy dependency, shared by both native and wasm builds.
+# "bevy_state" is listed explicitly (not just relied on via the "3d" profile)
+# because Bevy's derive macros (e.g. #[derive(States)] on AppState) need to
+# detect a plain [dependencies] entry for `bevy` to correctly emit
+# `bevy::state::...` paths — if `bevy` only appears inside a
+# [target.'cfg(...)'.dependencies] table, that detection fails and the
+# macros emit `bevy_state::...` instead, which doesn't exist as a direct
+# dependency here, causing a "crate not found" error.
 bevy = { version = "0.19", default-features = false, features = [
     "3d",
     "bevy_picking",
     "bevy_state",
     "jpeg",
 ] }
-# dynamic_linking speeds up compile times. It can not be used in wasm32 builds.
+bevy_egui = { workspace = true }
+
+# Native-only addition: dynamic_linking speeds up local dev builds by linking
+# Bevy as a shared library instead of statically. It has no wasm equivalent —
+# wasm binaries are always a single self-contained module — so it's added
+# only here, on top of the base feature set above (Cargo unions features
+# across [dependencies] and matching [target...] tables for the same crate).
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 bevy = { version = "0.19", features = ["dynamic_linking"] }

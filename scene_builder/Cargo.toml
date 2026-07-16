@@ -35,23 +35,6 @@ bevy = { version = "0.19", default-features = false, features = [
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 bevy = { version = "0.19", features = ["dynamic_linking"] }
 
-#[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
-#bevy = { version = "0.19", default-features = false, features = [
-#    "3d",
-#    "bevy_picking",
-#    "bevy_state",
-#    "dynamic_linking",
-#    "jpeg",
-#] }
-#
-#[target.'cfg(target_arch = "wasm32")'.dependencies]
-#bevy = { version = "0.19", default-features = false, features = [
-#    "3d",
-#    "bevy_picking",
-#    "bevy_state",
-#    "jpeg",
-#] }
-
 [dev-dependencies]
 rand = "0.10.2"
 

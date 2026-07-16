@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>App</title>
+  <style>
+    /* Full-viewport canvas, no scrollbars/margins */
+    html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+    canvas#bevy { width: 100%; height: 100%; display: block; }
+  </style>
+</head>
+<body>
+  <!-- id must match the "#bevy" selector set in WindowPlugin above -->
+  <canvas id="bevy"></canvas>
+
+  <!--
+    Trunk auto-injects the compiled wasm module's <script> tag on build —
+    you don't need to hand-write a <script src="..."> here, unlike a
+    hand-rolled setup; Trunk handles this via its own build pipeline
+    (same mechanism ui_panels/index.html already relies on).
+  -->
+</body>
+</html>

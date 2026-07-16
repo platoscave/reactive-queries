@@ -1,4 +1,4 @@
-use bevy::camera::RenderTarget; // <-- moved from bevy::render::camera
+use bevy::camera::RenderTarget; // moved here from bevy::render::camera in recent Bevy versions
 use bevy::prelude::*;
 use bevy::render::render_resource::{Extent3d, TextureDimension, TextureFormat, TextureUsages};
 use bevy_egui::egui;
@@ -20,6 +20,9 @@ pub fn setup_render_target(mut commands: Commands, mut images: ResMut<Assets<Ima
         size,
         TextureDimension::D2,
         &[0, 0, 0, 0],
+        // Rgba8UnormSrgb, not Bgra8UnormSrgb — bevy_egui's render pipeline
+        // expects RGBA byte order for images it displays; BGRA (the typical
+        // window-swapchain format) caused a pipeline format mismatch here.
         TextureFormat::Rgba8UnormSrgb,
         default(),
     );
@@ -30,7 +33,9 @@ pub fn setup_render_target(mut commands: Commands, mut images: ResMut<Assets<Ima
 
     commands.spawn((
         Camera3d::default(),
-        RenderTarget::Image(image_handle.clone().into()), // <-- separate component now, not Camera { target: ... }
+        // RenderTarget is a separate required component in Bevy 0.19+,
+        // not a field on Camera itself as in older versions.
+        RenderTarget::Image(image_handle.clone().into()),
     ));
 
     commands.insert_resource(SceneTexture {
