@@ -127,13 +127,12 @@ pub fn spawn_class(
     key: &str,
     name: &str,
     assosciations: Vec<(String, String)>,
-) -> Entity { 
+) -> Entity {
     let color_map = color_maps.get(&assets.color_map).unwrap();
     let Some(_class_color) = color_map.0.get("class") else {
         warn!("No \"class\" entry found in color map — check colors.json content");
         return superclass_ent_opt.unwrap(); // or restructure to propagate the failure up
     };
-
 
     // y offset relative to the parent
     let mut y = -4.0;
