@@ -16,6 +16,15 @@ pub fn parse_draw_classes(
     mut registry: ResMut<KeyRegistry>,
     assets: Res<AssetHandels>,
 ) {
+    let Some(color_map) = color_maps.get(&assets.color_map) else {
+        // Asset handle exists but data isn't ready yet — this can happen on
+        // wasm due to network latency even after the loading state has
+        // transitioned. Bail out; if this system is scheduled to retry
+        // (e.g. via a run condition or by not consuming/despawning inputs
+        // it hasn't processed), it'll succeed once the data arrives.
+        warn!("ColorMap asset not yet available, deferring class parsing");
+        return;
+    };
     let class_handel = configs
         .get(&asset_handels.classes_handel)
         .expect("classes json not loaded");
@@ -118,8 +127,13 @@ pub fn spawn_class(
     key: &str,
     name: &str,
     assosciations: Vec<(String, String)>,
-) -> Entity {
+) -> Entity { 
     let color_map = color_maps.get(&assets.color_map).unwrap();
+    let Some(class_color) = color_map.0.get("class") else {
+        warn!("No \"class\" entry found in color map — check colors.json content");
+        return superclass_ent_opt.unwrap(); // or restructure to propagate the failure up
+    };
+
 
     // y offset relative to the parent
     let mut y = -4.0;

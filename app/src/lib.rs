@@ -16,25 +16,33 @@ use scene_viewport::SceneTexture;
 /// native OS window, so no #[cfg(target_arch = "wasm32")] split is needed here.
 pub fn run() {
     App::new()
-        .add_plugins(DefaultPlugins.set(WindowPlugin {
-            primary_window: Some(Window {
-                // Explicitly bind to the canvas in index.html by CSS selector,
-                // rather than relying on Bevy's default canvas-detection
-                // behavior on wasm (which can vary and is easy to get wrong).
-                // Ignored entirely on native builds.
-                canvas: Some("#bevy".to_string()),
-                // Makes the canvas resize to fill its parent element in the
-                // page, rather than staying a fixed pixel size — matters for
-                // a responsive page layout. Ignored on native.
-                fit_canvas_to_parent: true,
-                // Stops the browser from intercepting certain events (e.g.
-                // right-click context menu) so they don't fight with in-app
-                // camera controls / picking. Ignored on native.
-                prevent_default_event_handling: false,
-                ..default()
-            }),
-            ..default()
-        }))
+        .add_plugins(
+            DefaultPlugins
+                .set(WindowPlugin {
+                    primary_window: Some(Window {
+                        // Explicitly bind to the canvas in index.html by CSS selector,
+                        // rather than relying on Bevy's default canvas-detection
+                        // behavior on wasm (which can vary and is easy to get wrong).
+                        // Ignored entirely on native builds.
+                        canvas: Some("#bevy".to_string()),
+                        // Makes the canvas resize to fill its parent element in the
+                        // page, rather than staying a fixed pixel size — matters for
+                        // a responsive page layout. Ignored on native.
+                        fit_canvas_to_parent: true,
+                        // Stops the browser from intercepting certain events (e.g.
+                        // right-click context menu) so they don't fight with in-app
+                        // camera controls / picking. Ignored on native.
+                        prevent_default_event_handling: false,
+                        ..default()
+                    }),
+                    ..default()
+                })
+                // no meta check (404s)
+                .set(AssetPlugin {
+                    meta_check: bevy::asset::AssetMetaCheck::Never,
+                    ..default()
+                }),
+        )
         .add_plugins(EguiPlugin::default())
         .add_plugins(FontMeshPlugin::<StandardMaterial>::default())
         // Debug-only world inspector, toggled with Escape — harmless to leave
