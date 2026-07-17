@@ -2,12 +2,20 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>App</title>
+  <title>Reactive Queries</title>
+  <base data-trunk-public-url />
   <style>
     /* Full-viewport canvas, no scrollbars/margins */
     html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
     canvas#bevy { width: 100%; height: 100%; display: block; }
   </style>
+    <!--
+    Tells trunk to copy the assets/ directory into dist/ during build,
+    so Bevy's asset server can fetch e.g. "assets/skyboxes/..." at
+    runtime via HTTP, the same relative path it uses when reading from
+    disk on native builds.
+    -->
+    <link data-trunk rel="copy-dir" href="assets" />
 </head>
 <body>
   <!-- id must match the "#bevy" selector set in WindowPlugin above -->
