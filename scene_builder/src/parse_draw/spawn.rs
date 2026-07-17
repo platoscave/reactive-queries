@@ -16,7 +16,7 @@ pub fn parse_draw_classes(
     mut registry: ResMut<KeyRegistry>,
     assets: Res<AssetHandels>,
 ) {
-    let Some(color_map) = color_maps.get(&assets.color_map) else {
+    let Some(_color_map) = color_maps.get(&assets.color_map) else {
         // Asset handle exists but data isn't ready yet — this can happen on
         // wasm due to network latency even after the loading state has
         // transitioned. Bail out; if this system is scheduled to retry
@@ -129,7 +129,7 @@ pub fn spawn_class(
     assosciations: Vec<(String, String)>,
 ) -> Entity { 
     let color_map = color_maps.get(&assets.color_map).unwrap();
-    let Some(class_color) = color_map.0.get("class") else {
+    let Some(_class_color) = color_map.0.get("class") else {
         warn!("No \"class\" entry found in color map — check colors.json content");
         return superclass_ent_opt.unwrap(); // or restructure to propagate the failure up
     };
