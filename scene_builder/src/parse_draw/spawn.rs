@@ -77,6 +77,9 @@ pub fn parse_draw_classes(
             );
         }
     }
+
+    // At the very end, after successfully parsing every class:
+    commands.insert_resource(ClassesParsed);
 }
 
 fn get_argo_class_titles(obj: &Value) -> Vec<(String, String)> {

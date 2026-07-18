@@ -32,7 +32,7 @@ pub struct ColorMap(pub HashMap<String, Color>);
 // Define the asset collection with path attributes
 #[derive(AssetCollection, Resource)]
 pub struct AssetHandels {
-    #[asset(path = "data/classes.json")]
+    #[asset(path = "data/demo.json")]
     pub classes_handel: Handle<ClassValueAsset>,
 
     #[asset(path = "data/colors.json")]

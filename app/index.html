@@ -5,9 +5,35 @@
   <title>Reactive Queries</title>
   <base data-trunk-public-url />
   <style>
-    /* Full-viewport canvas, no scrollbars/margins */
-    html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-    canvas#bevy { width: 100%; height: 100%; display: block; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      /* Very dark blue, matching the egui panel_fill/window_fill tint
+         used elsewhere in the app for visual consistency. */
+      background-color: #05050f;
+    }
+
+    canvas#bevy {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* Loading text, centered over the dark background. Sits above the
+       canvas until JS removes it once the wasm app has started. */
+    #loading_text {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-family: sans-serif;
+      font-size: 1.2rem;
+      text-align: center;
+      z-index: 10;
+    }
   </style>
     <!--
     Tells trunk to copy the assets/ directory into dist/ during build,
@@ -27,5 +53,13 @@
     hand-rolled setup; Trunk handles this via its own build pipeline
     (same mechanism ui_panels/index.html already relies on).
   -->
+
+    <!--
+    Shown while the wasm bundle downloads and initializes. Bevy's own
+    wasm bootstrapping (or the equivalent hook in main.rs, if present)
+    is expected to remove this element once startup completes — matching
+    the same pattern ui_panels/index.html already uses for its loading_text.
+  -->
+  <div id="loading_text">Loading…</div>
 </body>
 </html>
