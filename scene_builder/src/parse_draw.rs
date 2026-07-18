@@ -16,12 +16,29 @@ pub use components::*;
 use layout::*;
 use spawn::*;
 
+/// Marker resource: once inserted, parse_draw_classes has successfully run
+/// and won't run again. Prevents re-parsing every frame once it succeeds.
+#[derive(Resource)]
+struct ClassesParsed;
+
 pub struct ParseDrawPlugin;
 impl Plugin for ParseDrawPlugin {
     fn build(&self, app: &mut App) {
         app
             // initialize the registry
             .init_resource::<KeyRegistry>()
+            // Retry every frame once Loaded, until the ColorMap asset data
+            // is actually available — guards against a real timing gap
+            // between "AssetServer reports loaded" and "Assets<ColorMap>
+            // actually contains the deserialized value", which showed up
+            // on wasm due to its async scheduling (not observed natively,
+            // where load latency is near-zero).
+            .add_systems(
+                Update,
+                parse_draw_classes
+                    .run_if(in_state(AppState::Loaded))
+                    .run_if(not(resource_exists::<ClassesParsed>)),
+            )
             .add_systems(
                 Update,
                 (
@@ -36,7 +53,7 @@ impl Plugin for ParseDrawPlugin {
                     .run_if(in_state(AppState::Loaded)),
             )
             // parse the classes.json Value and draw the classes
-            .add_systems(OnEnter(AppState::Loaded), parse_draw_classes)
+            //.add_systems(OnEnter(AppState::Loaded), parse_draw_classes)
             .add_systems(
                 PostUpdate,
                 (resolve_pending_associations, update_association_beams)

@@ -57,6 +57,8 @@ pub fn resolve_pending_associations(
     query: Query<(Entity, &PendingAssociation)>,
     registry: Res<KeyRegistry>,
 ) {
+    // Bail out (and retry next frame, since ClassesParsed hasn't been
+    // inserted yet) if either asset isn't actually available yet.
     let Some(color_map) = color_maps.get(&assets.color_map) else {
         return;
     };
