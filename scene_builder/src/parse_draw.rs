@@ -62,5 +62,22 @@ impl Plugin for ParseDrawPlugin {
                     .run_if(in_state(AppState::Loaded)),
             )
             .add_observer(on_click);
+
+        #[cfg(target_arch = "wasm32")]
+        app.add_systems(Update, hide_loading_text)
+    }
+}
+
+// app/src/lib.rs — only compiled for wasm, since `web_sys`/DOM APIs don't exist natively
+#[cfg(target_arch = "wasm32")]
+fn hide_loading_text(classes_parsed: Option<Res<ClassesParsed>>) {
+    if classes_parsed.is_some() {
+        if let Some(window) = web_sys::window() {
+            if let Some(document) = window.document() {
+                if let Some(el) = document.get_element_by_id("loading_text") {
+                    el.remove();
+                }
+            }
+        }
     }
 }
