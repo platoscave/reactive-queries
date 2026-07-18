@@ -32,7 +32,7 @@ pub fn run() {
                         // Stops the browser from intercepting certain events (e.g.
                         // right-click context menu) so they don't fight with in-app
                         // camera controls / picking. Ignored on native.
-                        prevent_default_event_handling: false,
+                        prevent_default_event_handling: true,
                         ..default()
                     }),
                     ..default()
