@@ -34,7 +34,9 @@ bevy = { version = "0.19", default-features = false, features = [
 # dynamic_linking speeds up compile times. It can not be used in wasm32 builds.
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 bevy = { version = "0.19", features = ["dynamic_linking"] }
+
 # allows us to remove loading text
+[target.'cfg(target_arch = "wasm32")'.dependencies]
 web-sys = { version = "0.3", features = ["Window", "Document", "Element"] }
 
 [dev-dependencies]

@@ -2,6 +2,8 @@ use crate::*; // for AppState, ColorMap, AssetHandels, ClassValueAsset, etc.
 use bevy::asset::RenderAssetUsages;
 pub use loading_plugin::*;
 use std::f32::consts::PI;
+#[cfg(target_arch = "wasm32")]
+use web_sys;   
 
 // Our modules, adjacent sources
 mod associations;
@@ -64,8 +66,7 @@ impl Plugin for ParseDrawPlugin {
             .add_observer(on_click);
 
         #[cfg(target_arch = "wasm32")]
-        app.add_systems(Update, hide_loading_text)
-        ()
+        app.add_systems(Update, hide_loading_text);
     }
 }
 
