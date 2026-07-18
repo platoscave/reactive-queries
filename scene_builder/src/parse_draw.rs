@@ -3,7 +3,7 @@ use bevy::asset::RenderAssetUsages;
 pub use loading_plugin::*;
 use std::f32::consts::PI;
 #[cfg(target_arch = "wasm32")]
-use web_sys;   
+use web_sys;
 
 // Our modules, adjacent sources
 mod associations;
