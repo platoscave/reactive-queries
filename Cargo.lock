@@ -279,7 +279,6 @@ dependencies = [
  "scene_builder",
  "serde",
  "ui_panels",
- "web-sys",
 ]
 
 [[package]]
@@ -5939,6 +5938,7 @@ dependencies = [
  "rand",
  "serde",
  "serde_json",
+ "web-sys",
 ]
 
 [[package]]

@@ -65,6 +65,7 @@ impl Plugin for ParseDrawPlugin {
 
         #[cfg(target_arch = "wasm32")]
         app.add_systems(Update, hide_loading_text)
+        ()
     }
 }
 
