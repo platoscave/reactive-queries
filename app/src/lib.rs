@@ -1,6 +1,7 @@
 // Declares scene_viewport.rs as part of this crate — without this line,
 // the file exists on disk but the compiler doesn't know about it.
 mod scene_viewport;
+mod url_listener;
 
 use bevy::input::common_conditions::input_toggle_active;
 use bevy::prelude::*;
@@ -9,12 +10,13 @@ use bevy_egui::{EguiContexts, EguiPlugin, EguiPrimaryContextPass, EguiTextureHan
 use bevy_fontmesh::prelude::*;
 use bevy_inspector_egui::quick::WorldInspectorPlugin;
 use scene_viewport::SceneTexture;
+use url_listener::*;
 
 /// Entry point called by main.rs, identically for both native and wasm builds.
 /// Bevy's `winit` backend handles the native/wasm distinction internally —
 /// on wasm32 it attaches to the <canvas> named below instead of opening a
 /// native OS window, so no #[cfg(target_arch = "wasm32")] split is needed here.
-pub fn run() {
+pub fn run(initial_hash: Option<String>) {
     App::new()
         .add_plugins(
             DefaultPlugins
@@ -54,6 +56,8 @@ pub fn run() {
         .add_plugins(scene_builder::LoadingPlugin)
         .add_plugins(scene_builder::ParseDrawPlugin)
         .add_plugins(scene_builder::SkyboxFlytoCameraPlugin)
+        .add_plugins(UrlListenerPlugin { initial_hash })
+        .add_systems(Update, debug_print_hash)
         // Spawns the off-screen render target + camera that the 3D scene
         // draws into, so it can be displayed inside an egui image widget
         // rather than directly to the window/canvas.
@@ -93,4 +97,10 @@ fn draw_ui(mut contexts: EguiContexts, mut scene_texture: ResMut<SceneTexture>) 
     });
 
     Ok(())
+}
+
+fn debug_print_hash(url_hash: Res<UrlHash>) {
+    if url_hash.is_changed() {
+        println!("{:#?}", *url_hash);
+    }
 }

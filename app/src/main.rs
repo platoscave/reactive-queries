@@ -6,5 +6,11 @@
 // native and wasm builds just call the same run() function — no
 // #[cfg(target_arch = "wasm32")] split needed here.
 fn main() {
-    app::run();
+    // Optional first CLI argument becomes the initial URL hash, for local
+    // testing without a real browser URL, e.g.:
+    //   cargo run --bin app -- "dept.5/emp.2.1"
+    // (leading '#' is optional — UrlHash::parse strips it if present)
+    let initial_hash = std::env::args().nth(1);
+
+    app::run(initial_hash);
 }

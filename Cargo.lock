@@ -279,6 +279,8 @@ dependencies = [
  "scene_builder",
  "serde",
  "ui_panels",
+ "wasm-bindgen",
+ "web-sys",
 ]
 
 [[package]]
