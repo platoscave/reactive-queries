@@ -42,15 +42,15 @@ pub fn parse_draw_classes(
             .as_str()
             .expect("key not found in serde_object");
 
-        // If the object has a classId, its an object, otherwise its a class
-        if serde_object.get("classId").is_some() {
+        // If the object has a classKey, its an object, otherwise its a class
+        if serde_object.get("classKey").is_some() {
             panic!("serde_object is an object (not a class)");
         } else {
             // set optional superclass to None
             let mut superclass_ent_opt: Option<Entity> = None;
 
             // get the superclass entity if there is one
-            let superclass_key_opt = serde_object.get("superClassId");
+            let superclass_key_opt = serde_object.get("superClassKey");
             if let Some(superclass_key_value) = superclass_key_opt {
                 let superclass_key_str = superclass_key_value.as_str().unwrap();
 
@@ -88,9 +88,9 @@ fn get_argo_class_titles(obj: &Value) -> Vec<(String, String)> {
     if let Some(properties) = obj.get("properties").and_then(|p| p.as_object()) {
         for (_key, prop) in properties {
             if let Some(argo_query) = prop.get("argoQuery") {
-                let class_id = argo_query
+                let class_key = argo_query
                     .get("where")
-                    .and_then(|w| w.get("classId"))
+                    .and_then(|w| w.get("classKey"))
                     .and_then(|c| c.as_str());
 
                 //let title = prop.get("title").and_then(|t| t.as_str());
@@ -100,16 +100,16 @@ fn get_argo_class_titles(obj: &Value) -> Vec<(String, String)> {
                     .unwrap_or("unnamed")
                     .to_string();
 
-                // if let (Some(class_id), Some(title)) = (class_id, title) {
-                //     result.push((class_id.to_string(), title.to_string()));
+                // if let (Some(class_key), Some(title)) = (class_key, title) {
+                //     result.push((class_key.to_string(), title.to_string()));
                 // }
 
-                match class_id {
-                    Some(class_id) => {
-                        result.push((class_id.to_string(), title));
+                match class_key {
+                    Some(class_key) => {
+                        result.push((class_key.to_string(), title));
                     }
                     None => {
-                        warn!("no class_id in argoquery");
+                        warn!("no class_key in argoquery");
                     }
                 }
             }
@@ -249,10 +249,10 @@ pub fn spawn_class(
 
     // Record associations to be resolved later, once all classes exist
     // and transforms have propagated (see draw_associations system)
-    for (class_id, title) in &assosciations {
+    for (class_key, title) in &assosciations {
         commands.spawn(PendingAssociation {
             from_key: key.to_string(),
-            to_class_id: class_id.clone(),
+            to_class_key: class_key.clone(),
             title: title.clone(),
         });
     }
@@ -325,7 +325,7 @@ fn object_mesh() -> BevyMesh3d {
     // Extrude along the Z-axis by a depth of 1.0
     edge = mesh.extrude_tri(edge, trans);
     for _ in 0..5 {
-        edge = mesh.extrude_tri_face(mesh.edge(edge).face_id(), trans);
+        edge = mesh.extrude_tri_face(mesh.edge(edge).face_key(), trans);
     }
 
     //mesh.transform(&Transform::from_translation(vec3(0.0, 0.0, -0.3)));

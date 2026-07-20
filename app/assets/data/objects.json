@@ -3,23 +3,23 @@
     "key": "spalastsensynen",
     "name": "Message Proposition",
     "description": "<p>Message Proposition</p>",
-    "classId": "purchase-prop",
-    "ownerId": "bikeshop",
+    "classKey": "purchase-prop",
+    "ownerKey": "bikeshop",
     "startDate": "2019-08-10T14:49:54.500",
     "endDate": "2025-08-10T14:49:54.500",
-    "processId": "manainoshs",
+    "processKey": "manainoshs",
     "assetIds": []
   },
   {
     "key": "coutrcules",
     "name": "Purchase Proposition",
     "description": "<p>Purchase Proposition</p>",
-    "classId": "purchase-prop",
-    "ownerId": "bikeshop",
+    "classKey": "purchase-prop",
+    "ownerKey": "bikeshop",
     "startDate": "2019-08-10T14:49:54.500",
     "endDate": "2025-08-10T14:49:54.500",
-    "processId": "maynexperg",
-    "subprocessId": "cheldanecibem",
+    "processKey": "maynexperg",
+    "subprocessKey": "cheldanecibem",
     "assetIds": [
       "stapomerna",
       "iggusthracang",
@@ -30,12 +30,12 @@
     "key": "teantoux",
     "name": "Rental Proposition",
     "description": "<p>Rental Proposition</p>",
-    "classId": "rental-prop",
-    "ownerId": "bikeshop",
+    "classKey": "rental-prop",
+    "ownerKey": "bikeshop",
     "startDate": "2019-08-10T14:49:54.500",
     "endDate": "2025-08-10T14:49:54.500",
-    "processId": "thl00068",
-    "subprocessId": "makherkargs",
+    "processKey": "thl00068",
+    "subprocessKey": "makherkargs",
     "assetIds": [
       "blkdghf1",
       "vears14fourma",
@@ -46,19 +46,19 @@
     "key": "emcanrnewamy",
     "name": "Repair Proposition",
     "description": "<p>Repair Proposition</p>",
-    "classId": "repair-prop",
-    "ownerId": "bikeshop",
+    "classKey": "repair-prop",
+    "ownerKey": "bikeshop",
     "startDate": "2019-08-10T14:49:54.500",
     "endDate": "2025-08-10T14:49:54.500",
-    "processId": "heicaqure98",
-    "subprocessId": "usrsisquk115",
+    "processKey": "heicaqure98",
+    "subprocessKey": "usrsisquk115",
     "assetIds": []
   },
   {
     "key": "platoscave",
     "name": "platoscave",
     "icon": "platoscave.png",
-    "classId": "users",
+    "classKey": "users",
     "account_name": "platoscave",
     "head_block_num": 73306938,
     "head_block_time": "2019-08-10T14:49:54.500",
@@ -143,7 +143,7 @@
   {
     "key": "demo-user-01",
     "name": "Mom",
-    "classId": "users",
+    "classKey": "users",
     "icon": "Mom.jpg",
     "permissions": [
       {
@@ -181,7 +181,7 @@
   {
     "key": "demo-user-02",
     "name": "Pop",
-    "classId": "users",
+    "classKey": "users",
     "icon": "Pop.jpg",
     "permissions": [
       {
@@ -219,7 +219,7 @@
   {
     "key": "demo-user-03",
     "name": "Assistant",
-    "classId": "users",
+    "classKey": "users",
     "icon": "Assistant.jpg",
     "permissions": [
       {
@@ -257,7 +257,7 @@
   {
     "key": "demo-user-04",
     "name": "Receptionist One",
-    "classId": "users",
+    "classKey": "users",
     "icon": "ReceptionistOne.jpg",
     "permissions": [
       {
@@ -295,7 +295,7 @@
   {
     "key": "demo-user-05",
     "name": "Nurse One",
-    "classId": "users",
+    "classKey": "users",
     "icon": "NurseOne.jpg",
     "permissions": [
       {
@@ -333,7 +333,7 @@
   {
     "key": "demo-user-06",
     "name": "Nurse Two",
-    "classId": "users",
+    "classKey": "users",
     "icon": "NurseTwo.jpg",
     "permissions": [
       {
@@ -371,7 +371,7 @@
   {
     "key": "demo-user-07",
     "name": "Physician One",
-    "classId": "users",
+    "classKey": "users",
     "icon": "PhysicianOne.jpg",
     "permissions": [
       {
@@ -409,7 +409,7 @@
   {
     "key": "demo-user-08",
     "name": "Physician Two",
-    "classId": "users",
+    "classKey": "users",
     "icon": "PhysicianTwo.jpg",
     "permissions": [
       {
@@ -447,7 +447,7 @@
   {
     "key": "demo-user-09",
     "name": "Consumer One",
-    "classId": "users",
+    "classKey": "users",
     "icon": "ConsumerOne.jpg",
     "permissions": [
       {
@@ -485,7 +485,7 @@
   {
     "key": "demo-user-10",
     "name": "Consumer Two",
-    "classId": "users",
+    "classKey": "users",
     "icon": "ConsumerTwo.jpg",
     "permissions": [
       {
@@ -523,7 +523,7 @@
   {
     "key": "argonaut",
     "name": "Argonaut",
-    "classId": "non-profit",
+    "classKey": "non-profit",
     "icon": "Argonaut.svg",
     "subParagraphIds": [
       "s1ialanewor"
@@ -570,7 +570,7 @@
   {
     "key": "bikeshop",
     "name": "DEMO Bicycle Shop",
-    "classId": "commercial",
+    "classKey": "commercial",
     "icon": "DEMOBicycleShop.svg",
     "subParagraphIds": [
       "paybundumagipi"
@@ -618,7 +618,7 @@
     "key": "clinic",
     "name": "DEMO Clinic",
     "description": "",
-    "classId": "non-profit",
+    "classKey": "non-profit",
     "icon": "DEMOClinic.svg",
     "permissions": [
       {
@@ -662,8 +662,8 @@
   {
     "key": "clinic-desk",
     "name": "Clinic Reception",
-    "classId": "org-units",
-    "ownerId": "clinic",
+    "classKey": "org-units",
+    "ownerKey": "clinic",
     "permissions": [
       {
         "perm_name": "owner",
@@ -706,8 +706,8 @@
   {
     "key": "clinic-consult",
     "name": "Clinic Consulting Room",
-    "classId": "org-units",
-    "ownerId": "clinic",
+    "classKey": "org-units",
+    "ownerKey": "clinic",
     "permissions": [
       {
         "perm_name": "owner",
@@ -772,8 +772,8 @@
     "key": "withbap400",
     "name": "Messaging",
     "description": "",
-    "classId": "org-units",
-    "ownerId": "argonaut",
+    "classKey": "org-units",
+    "ownerKey": "argonaut",
     "permissions": [
       {
         "perm_name": "owner",
@@ -816,9 +816,9 @@
   {
     "key": "bikeshop-desk",
     "name": "Shop Front Desk",
-    "classId": "org-units",
+    "classKey": "org-units",
     "icon": "ShopFrontDesk.svg",
-    "parentOrgId": "bikeshop",
+    "parentOrgKey": "bikeshop",
     "permissions": [
       {
         "perm_name": "owner",
@@ -868,9 +868,9 @@
   {
     "key": "bikeshop-shop",
     "name": "Shop Workshop",
-    "classId": "org-units",
+    "classKey": "org-units",
     "icon": "ShopWorkshop.svg",
-    "parentOrgId": "bikeshop",
+    "parentOrgKey": "bikeshop",
     "permissions": [
       {
         "perm_name": "owner",
@@ -928,61 +928,61 @@
     "key": "manainoshs",
     "name": "Bicycle Shop Messaging",
     "description": "<p>Messaging Request Process</p>",
-    "classId": "processes",
+    "classKey": "processes",
     "returnActions": [
       "happy",
       "unhappy"
     ],
-    "firstStepId": "truym12428",
-    "ownerId": "bikeshop"
+    "firstStepKey": "truym12428",
+    "ownerKey": "bikeshop"
   },
   {
     "key": "cheldanecibem",
     "name": "Bicycle Shop Purchase Process",
     "description": "<p>Bicycle Shop Purchase Process</p>",
-    "classId": "sub-processes",
+    "classKey": "sub-processes",
     "returnActions": [
       "happy",
       "unhappy"
     ],
-    "firstStepId": "ja13daleo",
-    "ownerId": "bikeshop"
+    "firstStepKey": "ja13daleo",
+    "ownerKey": "bikeshop"
   },
   {
     "key": "maynexperg",
     "name": "Argonaut Purchase Process",
     "description": "<p>Purchase</p>",
-    "classId": "processes",
+    "classKey": "processes",
     "returnActions": [
       "happy",
       "unhappy",
       "reject"
     ],
-    "firstStepId": "latiprine",
-    "ownerId": "argonaut"
+    "firstStepKey": "latiprine",
+    "ownerKey": "argonaut"
   },
   {
     "key": "thl00068",
     "name": "Argonaut Rental Process",
     "description": "<p>Purchase</p>",
-    "classId": "processes",
+    "classKey": "processes",
     "returnActions": [
       "happy",
       "unhappy",
       "reject"
     ],
-    "firstStepId": "wocherr9",
-    "ownerId": "argonaut"
+    "firstStepKey": "wocherr9",
+    "ownerKey": "argonaut"
   },
   {
     "key": "wocherr9",
     "name": "Validate",
     "description": "<p>Validate</p>",
-    "classId": "execute",
+    "classKey": "execute",
     "nextStepIds": [
       {
         "action": "happy",
-        "stepId": "gelmerer9"
+        "stepKey": "gelmerer9"
       },
       {
         "action": "reject"
@@ -993,48 +993,48 @@
       "product escrow",
       "payment escrow"
     ],
-    "ownerId": "argonaut"
+    "ownerKey": "argonaut"
   },
   {
     "key": "gelmerer9",
     "name": "Perform",
     "description": "<p>Perform</p>",
-    "classId": "delegate",
+    "classKey": "delegate",
     "nextStepIds": [
       {
         "action": "happy",
-        "stepId": "stssenee9cer"
+        "stepKey": "stssenee9cer"
       },
       {
         "action": "unhappy",
-        "stepId": "heberghren"
+        "stepKey": "heberghren"
       }
     ],
-    "deligateProcessId": "cheldanecibem",
-    "ownerId": "bikeshop"
+    "deligateProcessKey": "cheldanecibem",
+    "ownerKey": "bikeshop"
   },
   {
     "key": "stssenee9cer",
     "name": "Acceptance",
     "description": "<p>Acceptance</p>",
-    "classId": "consumer",
+    "classKey": "consumer",
     "nextStepIds": [
       {
         "action": "happy",
-        "stepId": "uniigroodeco7"
+        "stepKey": "uniigroodeco7"
       },
       {
         "action": "unhappy",
-        "stepId": "heberghren"
+        "stepKey": "heberghren"
       }
     ],
-    "ownerId": "bikeshop"
+    "ownerKey": "bikeshop"
   },
   {
     "key": "uniigroodeco7",
     "name": "Transact",
     "description": "<p>Transact</p>",
-    "classId": "execute",
+    "classKey": "execute",
     "nextStepIds": [
       {
         "action": "happy"
@@ -1044,13 +1044,13 @@
       "transfer product ownership",
       "transfer payment"
     ],
-    "ownerId": "bikeshop"
+    "ownerKey": "bikeshop"
   },
   {
     "key": "heberghren",
     "name": "Rollback",
     "description": "<p>Rollback</p>",
-    "classId": "execute",
+    "classKey": "execute",
     "nextStepIds": [
       {
         "action": "unhappy"
@@ -1059,30 +1059,30 @@
     "execute": [
       "return payment"
     ],
-    "ownerId": "argonaut"
+    "ownerKey": "argonaut"
   },
   {
     "key": "heicaqure98",
     "name": "Argonaut Service Process",
     "description": "<p>Purchase</p>",
-    "classId": "processes",
+    "classKey": "processes",
     "returnActions": [
       "happy",
       "unhappy",
       "reject"
     ],
-    "firstStepId": "ndelionat5",
-    "ownerId": "argonaut"
+    "firstStepKey": "ndelionat5",
+    "ownerKey": "argonaut"
   },
   {
     "key": "ndelionat5",
     "name": "Validate",
     "description": "<p>Validate</p>",
-    "classId": "execute",
+    "classKey": "execute",
     "nextStepIds": [
       {
         "action": "happy",
-        "stepId": "lesatime23"
+        "stepKey": "lesatime23"
       },
       {
         "action": "reject"
@@ -1093,48 +1093,48 @@
       "product escrow",
       "payment escrow"
     ],
-    "ownerId": "argonaut"
+    "ownerKey": "argonaut"
   },
   {
     "key": "lesatime23",
     "name": "Perform",
     "description": "<p>Perform</p>",
-    "classId": "delegate",
+    "classKey": "delegate",
     "nextStepIds": [
       {
         "action": "happy",
-        "stepId": "jmdoro3mace"
+        "stepKey": "jmdoro3mace"
       },
       {
         "action": "unhappy",
-        "stepId": "dafermmoverife"
+        "stepKey": "dafermmoverife"
       }
     ],
-    "deligateProcessId": "cheldanecibem",
-    "ownerId": "bikeshop"
+    "deligateProcessKey": "cheldanecibem",
+    "ownerKey": "bikeshop"
   },
   {
     "key": "jmdoro3mace",
     "name": "Acceptance",
     "description": "<p>Acceptance</p>",
-    "classId": "consumer",
+    "classKey": "consumer",
     "nextStepIds": [
       {
         "action": "happy",
-        "stepId": "forthhsbedly"
+        "stepKey": "forthhsbedly"
       },
       {
         "action": "unhappy",
-        "stepId": "dafermmoverife"
+        "stepKey": "dafermmoverife"
       }
     ],
-    "ownerId": "bikeshop"
+    "ownerKey": "bikeshop"
   },
   {
     "key": "forthhsbedly",
     "name": "Transact",
     "description": "<p>Transact</p>",
-    "classId": "execute",
+    "classKey": "execute",
     "nextStepIds": [
       {
         "action": "happy"
@@ -1144,13 +1144,13 @@
       "transfer product ownership",
       "transfer payment"
     ],
-    "ownerId": "bikeshop"
+    "ownerKey": "bikeshop"
   },
   {
     "key": "dafermmoverife",
     "name": "Rollback",
     "description": "<p>Rollback</p>",
-    "classId": "execute",
+    "classKey": "execute",
     "nextStepIds": [
       {
         "action": "unhappy"
@@ -1159,31 +1159,31 @@
     "execute": [
       "return payment"
     ],
-    "ownerId": "argonaut"
+    "ownerKey": "argonaut"
   },
   {
     "key": "tgiouraykamus",
     "name": "Success",
     "description": "<p>Success</p>",
-    "classId": "closed",
-    "ownerId": "argonaut"
+    "classKey": "closed",
+    "ownerKey": "argonaut"
   },
   {
     "key": "s4farfrk986",
     "name": "Failed",
     "description": "<p>Failed</p>",
-    "classId": "closed",
-    "ownerId": "bikeshop"
+    "classKey": "closed",
+    "ownerKey": "bikeshop"
   },
   {
     "key": "latiprine",
     "name": "Validate",
     "description": "<p>Validate</p>",
-    "classId": "execute",
+    "classKey": "execute",
     "nextStepIds": [
       {
         "action": "happy",
-        "stepId": "mdilizibonx"
+        "stepKey": "mdilizibonx"
       },
       {
         "action": "reject"
@@ -1194,13 +1194,13 @@
       "product escrow",
       "payment escrow"
     ],
-    "ownerId": "argonaut"
+    "ownerKey": "argonaut"
   },
   {
     "key": "sthowg12319",
     "name": "Rollback",
     "description": "<p>Rollback</p>",
-    "classId": "execute",
+    "classKey": "execute",
     "nextStepIds": [
       {
         "action": "unhappy"
@@ -1209,13 +1209,13 @@
     "execute": [
       "return payment"
     ],
-    "ownerId": "argonaut"
+    "ownerKey": "argonaut"
   },
   {
     "key": "bouranhuneprit",
     "name": "Transact",
     "description": "<p>Transact</p>",
-    "classId": "execute",
+    "classKey": "execute",
     "nextStepIds": [
       {
         "action": "happy"
@@ -1225,138 +1225,138 @@
       "transfer product ownership",
       "transfer payment"
     ],
-    "ownerId": "bikeshop"
+    "ownerKey": "bikeshop"
   },
   {
     "key": "mdilizibonx",
     "name": "Perform",
     "description": "<p>Perform</p>",
-    "classId": "delegate",
+    "classKey": "delegate",
     "nextStepIds": [
       {
         "action": "happy",
-        "stepId": "ghasllosheyanouir"
+        "stepKey": "ghasllosheyanouir"
       },
       {
         "action": "unhappy",
-        "stepId": "sthowg12319"
+        "stepKey": "sthowg12319"
       }
     ],
-    "deligateProcessId": "cheldanecibem",
-    "ownerId": "bikeshop"
+    "deligateProcessKey": "cheldanecibem",
+    "ownerKey": "bikeshop"
   },
   {
     "key": "truym12428",
     "name": "Question",
     "description": "<p>Question</p>",
-    "classId": "provider",
+    "classKey": "provider",
     "nextStepIds": [
       {
         "action": "happy",
-        "stepId": "ppqusiapangee"
+        "stepKey": "ppqusiapangee"
       },
       {
         "action": "unhappy"
       }
     ],
-    "ownerId": "demo-user-08"
+    "ownerKey": "demo-user-08"
   },
   {
     "key": "tchbowledac",
     "name": "Expedite",
     "description": "<p>Expedite</p>",
-    "classId": "provider",
+    "classKey": "provider",
     "nextStepIds": [
       {
         "action": "happy"
       }
     ],
-    "authorizedOrgUnitId": "bikeshop-shop",
-    "ownerId": "bikeshop"
+    "authorizedOrgUnitKey": "bikeshop-shop",
+    "ownerKey": "bikeshop"
   },
   {
     "key": "usrsisquk115",
     "name": "Bicycle Shop Repair Process",
     "description": "<p>Bicycle Shop Purchase Process</p>",
-    "classId": "sub-processes",
+    "classKey": "sub-processes",
     "returnActions": [
       "happy",
       "unhappy"
     ],
-    "firstStepId": "jondcobavon",
-    "ownerId": "bikeshop"
+    "firstStepKey": "jondcobavon",
+    "ownerKey": "bikeshop"
   },
   {
     "key": "jondcobavon",
     "name": "Order Pick",
     "description": "<p>Order Pick</p>",
-    "classId": "provider",
+    "classKey": "provider",
     "nextStepIds": [
       {
         "action": "happy",
-        "stepId": "bealisod"
+        "stepKey": "bealisod"
       }
     ],
-    "authorizedOrgUnitId": "bikeshop-desk",
-    "ownerId": "bikeshop"
+    "authorizedOrgUnitKey": "bikeshop-desk",
+    "ownerKey": "bikeshop"
   },
   {
     "key": "bealisod",
     "name": "Expedite",
     "description": "<p>Expedite</p>",
-    "classId": "provider",
+    "classKey": "provider",
     "nextStepIds": [
       {
         "action": "happy"
       }
     ],
-    "authorizedOrgUnitId": "bikeshop-shop",
-    "ownerId": "bikeshop"
+    "authorizedOrgUnitKey": "bikeshop-shop",
+    "ownerKey": "bikeshop"
   },
   {
     "key": "makherkargs",
     "name": "Bicycle Shop Rental Process",
     "description": "<p>Bicycle Shop Purchase Process</p>",
-    "classId": "sub-processes",
+    "classKey": "sub-processes",
     "returnActions": [
       "happy",
       "unhappy"
     ],
-    "firstStepId": "mmorliverara",
-    "ownerId": "bikeshop"
+    "firstStepKey": "mmorliverara",
+    "ownerKey": "bikeshop"
   },
   {
     "key": "mmorliverara",
     "name": "Order Pick",
     "description": "<p>Order Pick</p>",
-    "classId": "provider",
+    "classKey": "provider",
     "nextStepIds": [
       {
         "action": "happy",
-        "stepId": "hthel20044237"
+        "stepKey": "hthel20044237"
       }
     ],
-    "authorizedOrgUnitId": "bikeshop-desk",
-    "ownerId": "bikeshop"
+    "authorizedOrgUnitKey": "bikeshop-desk",
+    "ownerKey": "bikeshop"
   },
   {
     "key": "hthel20044237",
     "name": "Expedite",
     "description": "<p>Expedite</p>",
-    "classId": "provider",
+    "classKey": "provider",
     "nextStepIds": [
       {
         "action": "happy"
       }
     ],
-    "authorizedOrgUnitId": "bikeshop-shop",
-    "ownerId": "bikeshop"
+    "authorizedOrgUnitKey": "bikeshop-shop",
+    "ownerKey": "bikeshop"
   },
   {
     "key": "ppqusiapangee",
     "name": "Answer",
     "description": "<p>Answer</p>",
-    "classId": "provider",
+    "classKey": "provider",
     "nextStepIds": [
       {
         "action": "happy"
@@ -1365,53 +1365,53 @@
         "action": "unhappy"
       }
     ],
-    "ownerId": "demo-user-08"
+    "ownerKey": "demo-user-08"
   },
   {
     "key": "ja13daleo",
     "name": "Order Pick",
     "description": "<p>Order Pick</p>",
-    "classId": "provider",
+    "classKey": "provider",
     "nextStepIds": [
       {
         "action": "happy",
-        "stepId": "tchbowledac"
+        "stepKey": "tchbowledac"
       }
     ],
-    "authorizedOrgUnitId": "bikeshop-desk",
-    "ownerId": "bikeshop"
+    "authorizedOrgUnitKey": "bikeshop-desk",
+    "ownerKey": "bikeshop"
   },
   {
     "key": "ghasllosheyanouir",
     "name": "Acceptance",
     "description": "<p>Acceptance</p>",
-    "classId": "consumer",
+    "classKey": "consumer",
     "nextStepIds": [
       {
         "action": "happy",
-        "stepId": "bouranhuneprit"
+        "stepKey": "bouranhuneprit"
       },
       {
         "action": "unhappy",
-        "stepId": "sthowg12319"
+        "stepKey": "sthowg12319"
       }
     ],
-    "ownerId": "bikeshop"
+    "ownerKey": "bikeshop"
   },
   {
     "key": "rin339998",
     "name": "Initialize",
     "description": "<p>Initialize</p>",
-    "classId": "open",
-    "ownerId": "argonaut"
+    "classKey": "open",
+    "ownerKey": "argonaut"
   },
   {
     "key": "ansattithe",
     "name": "Personal Menu Master Detail",
-    "classId": "pages",
+    "classKey": "master-detal",
     "layout": "Master Detail",
     "divider": "Vertical",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Navigation Menu",
@@ -1419,7 +1419,7 @@
           {
             "widgetType": "Navigation Menu",
             "name": "Navigation Menu",
-            "menuId": "hamby234"
+            "menuKey": "hamby234"
           }
         ]
       }
@@ -1428,10 +1428,10 @@
   {
     "key": "simmubypsafr",
     "name": "Generic Menu Master Detail",
-    "classId": "pages",
+    "classKey": "master-detal",
     "layout": "Master Detail",
     "divider": "Vertical",
-    "ownerId": "bikeshop",
+    "ownerKey": "bikeshop",
     "tabs": [
       {
         "name": "Navigation Menu",
@@ -1439,7 +1439,7 @@
           {
             "widgetType": "Navigation Menu",
             "name": "Navigation Menu",
-            "menuId": "drdshayllily"
+            "menuKey": "drdshayllily"
           }
         ]
       }
@@ -1448,10 +1448,10 @@
   {
     "key": "igliiare",
     "name": "Non-profit Menu Master Detail",
-    "classId": "pages",
+    "classKey": "master-detal",
     "layout": "Master Detail",
     "divider": "Vertical",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Navigation Menu",
@@ -1459,7 +1459,7 @@
           {
             "widgetType": "Navigation Menu",
             "name": "Navigation Menu",
-            "menuId": "drdshayllily"
+            "menuKey": "drdshayllily"
           }
         ]
       }
@@ -1468,10 +1468,10 @@
   {
     "key": "tcncofid",
     "name": "Process Universe Tree Studio",
-    "classId": "pages",
+    "classKey": "studio",
     "layout": "Studio",
     "model": "Class Model",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Process Universe",
@@ -1479,7 +1479,7 @@
           {
             "widgetType": "Tree",
             "name": "Class Model Tree",
-            "viewId": "fothpokarth"
+            "viewKey": "fothpokarth"
           }
         ]
       }
@@ -1488,10 +1488,10 @@
   {
     "key": "ritiamay",
     "name": "Process Universe Model Tree Master Detail",
-    "classId": "pages",
+    "classKey": "master-detal",
     "layout": "Master Detail",
     "model": "Class Model",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Process Universe",
@@ -1499,7 +1499,7 @@
           {
             "widgetType": "Tree",
             "name": "Class Model Tree",
-            "viewId": "fothpokarth"
+            "viewKey": "fothpokarth"
           }
         ]
       }
@@ -1508,10 +1508,10 @@
   {
     "key": "menlxikanonfe",
     "name": "Process Model Tree Studio",
-    "classId": "pages",
+    "classKey": "studio",
     "layout": "Studio",
     "model": "Process Model",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Propositions",
@@ -1519,7 +1519,7 @@
           {
             "widgetType": "Schema Table",
             "name": "Propositions Table",
-            "viewId": "tuperedg"
+            "viewKey": "tuperedg"
           }
         ]
       },
@@ -1529,7 +1529,7 @@
           {
             "widgetType": "Tree",
             "name": "Process Tree",
-            "viewId": "banb1deddilli"
+            "viewKey": "banb1deddilli"
           }
         ]
       },
@@ -1539,7 +1539,7 @@
           {
             "widgetType": "Schema Table",
             "name": "Organization Table",
-            "viewId": "brffunonkel"
+            "viewKey": "brffunonkel"
           }
         ]
       },
@@ -1549,7 +1549,7 @@
           {
             "widgetType": "Schema Table",
             "name": "Members Table",
-            "viewId": "brffunonkel"
+            "viewKey": "brffunonkel"
           }
         ]
       }
@@ -1558,10 +1558,10 @@
   {
     "key": "pyborerpilngos",
     "name": "Members Table Master Detail",
-    "classId": "pages",
+    "classKey": "master-detal",
     "layout": "Master Detail",
     "divider": "Vertical",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Members Table",
@@ -1569,7 +1569,7 @@
           {
             "widgetType": "Schema Table",
             "name": "Members Table",
-            "viewId": "brffunonkel"
+            "viewKey": "brffunonkel"
           }
         ]
       }
@@ -1579,16 +1579,16 @@
     "key": "chinammphakalaw",
     "name": "Class Details Page",
     "description": "<p>Do not remove. This is not an orphan.</p>",
-    "classId": "pages",
+    "classKey": "pages",
     "layout": "Page",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Class Details",
         "widgets": [
           {
             "widgetType": "Schema Form",
-            "viewId": "mpilalowathy"
+            "viewKey": "mpilalowathy"
           }
         ]
       },
@@ -1606,9 +1606,9 @@
     "key": "smaraspaled",
     "name": "Merged Ancestors Page",
     "description": "<p>Do not remove. This is not an orphan.</p>",
-    "classId": "pages",
+    "classKey": "pages",
     "layout": "Page",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Details",
@@ -1639,10 +1639,10 @@
   {
     "key": "termbdryt",
     "name": "Chart of Accounts Tree Master Detail",
-    "classId": "pages",
+    "classKey": "master-detal",
     "layout": "Master Detail",
     "divider": "Vertical",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Chart of Accounts Tree",
@@ -1650,7 +1650,7 @@
           {
             "widgetType": "Tree",
             "name": "Chart of Accounts Tree",
-            "viewId": "reroudorg2"
+            "viewKey": "reroudorg2"
           }
         ]
       }
@@ -1659,10 +1659,10 @@
   {
     "key": "goreddminr",
     "name": "Propositions Tree Master Detail",
-    "classId": "pages",
+    "classKey": "master-detal",
     "layout": "Master Detail",
     "divider": "Vertical",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Propositions Tree",
@@ -1670,7 +1670,7 @@
           {
             "widgetType": "Tree",
             "name": "Propositions Tree",
-            "viewId": "waakj1245"
+            "viewKey": "waakj1245"
           }
         ]
       }
@@ -1679,9 +1679,9 @@
   {
     "key": "mm4nurerors",
     "name": "Document Form Page",
-    "classId": "pages",
+    "classKey": "pages",
     "layout": "Page",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Document",
@@ -1689,7 +1689,7 @@
           {
             "widgetType": "Document",
             "name": "Document Form",
-            "viewId": "watontcky"
+            "viewKey": "watontcky"
           }
         ]
       }
@@ -1698,10 +1698,10 @@
   {
     "key": "antuhrdly",
     "name": "Members Table Master Detail",
-    "classId": "pages",
+    "classKey": "master-detal",
     "layout": "Master Detail",
     "divider": "Vertical",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Members Table",
@@ -1709,7 +1709,7 @@
           {
             "widgetType": "Schema Table",
             "name": "Members Table",
-            "XviewId": ""
+            "XviewKey": ""
           }
         ]
       }
@@ -1718,9 +1718,9 @@
   {
     "key": "ggalnstpaxx",
     "name": "Planning Calendar Page",
-    "classId": "pages",
+    "classKey": "pages",
     "layout": "Page",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Planing Calendar",
@@ -1736,10 +1736,10 @@
   {
     "key": "riditprbt",
     "name": "Backlog Table Page Master Detail",
-    "classId": "pages",
+    "classKey": "master-detal",
     "layout": "Master Detail",
     "divider": "Vertical",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Backlog Table",
@@ -1747,7 +1747,7 @@
           {
             "widgetType": "Schema Table",
             "name": "Backlog Table",
-            "viewId": "wrihellk"
+            "viewKey": "wrihellk"
           }
         ]
       }
@@ -1756,10 +1756,10 @@
   {
     "key": "xfu7bony",
     "name": "Document Tree Master Detail",
-    "classId": "pages",
+    "classKey": "master-detal",
     "layout": "Master Detail",
     "divider": "Vertical",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Document Tree",
@@ -1767,7 +1767,7 @@
           {
             "widgetType": "Tree",
             "name": "Document Tree",
-            "viewId": "sptshrapa"
+            "viewKey": "sptshrapa"
           }
         ]
       }
@@ -1776,9 +1776,9 @@
   {
     "key": "baitlothh079",
     "name": "Income Statement Page",
-    "classId": "pages",
+    "classKey": "pages",
     "layout": "Page",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Income Statement",
@@ -1793,9 +1793,9 @@
   {
     "key": "thilarto",
     "name": "Balance Sheet Page",
-    "classId": "pages",
+    "classKey": "pages",
     "layout": "Page",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Balance Sheet",
@@ -1810,9 +1810,9 @@
   {
     "key": "psvoigizy",
     "name": "Cash Flows Page",
-    "classId": "pages",
+    "classKey": "pages",
     "layout": "Page",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Cash Flows",
@@ -1827,9 +1827,9 @@
   {
     "key": "talcamope38",
     "name": "Members Page",
-    "classId": "pages",
+    "classKey": "pages",
     "layout": "Page",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Account",
@@ -1841,11 +1841,11 @@
       },
       {
         "name": "Messaging",
-        "pageId": "riditprbt"
+        "pageKey": "riditprbt"
       },
       {
         "name": "Backlog",
-        "pageId": "riditprbt"
+        "pageKey": "riditprbt"
       },
       {
         "name": "Availability",
@@ -1860,9 +1860,9 @@
   {
     "key": "pplezeacu11231",
     "name": "Chart of Accounts Page",
-    "classId": "pages",
+    "classKey": "pages",
     "layout": "Page",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Account Details",
@@ -1909,9 +1909,9 @@
   {
     "key": "aiowodro",
     "name": "Organizational Unit Page",
-    "classId": "pages",
+    "classKey": "pages",
     "layout": "Page",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Team Home",
@@ -1923,11 +1923,11 @@
       },
       {
         "name": "Members",
-        "pageId": "pyborerpilngos"
+        "pageKey": "pyborerpilngos"
       },
       {
         "name": "Backlog",
-        "pageId": "riditprbt"
+        "pageKey": "riditprbt"
       },
       {
         "name": "Availability",
@@ -1942,37 +1942,37 @@
   {
     "key": "halalalarl",
     "name": "Agreements Page",
-    "classId": "pages",
+    "classKey": "pages",
     "layout": "Page",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "We Are Provider",
-        "pageId": "riditprbt"
+        "pageKey": "riditprbt"
       },
       {
         "name": "We Are Consumer",
-        "pageId": "riditprbt"
+        "pageKey": "riditprbt"
       }
     ]
   },
   {
     "key": "kifehry5",
     "name": "Backlog Form and History Page",
-    "classId": "pages",
+    "classKey": "pages",
     "layout": "Page",
-    "ownerId": "argonaut",
+    "ownerKey": "argonaut",
     "tabs": [
       {
         "name": "Backlog History",
         "widgets": [
           {
             "widgetType": "Schema Form",
-            "viewId": "dcurestway"
+            "viewKey": "dcurestway"
           },
           {
             "widgetType": "Schema Table",
-            "viewId": "kicewacerafute"
+            "viewKey": "kicewacerafute"
           }
         ]
       }
@@ -1982,50 +1982,50 @@
     "key": "fothpokarth",
     "name": "Process Umiverse Tree View",
     "description": "<p>Descibes the class model hierarchy, including a children array</p>",
-    "classId": "views",
-    "ownerId": "argonaut",
-    "queryId": "eaigrate",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "eaigrate",
     "type": "object"
   },
   {
     "key": "banb1deddilli",
     "name": "Process Tree View",
-    "classId": "views",
-    "ownerId": "argonaut",
-    "queryId": "femandarpnonon",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "femandarpnonon",
     "type": "object"
   },
   {
     "key": "tuperedg",
     "name": "Proposition Table View",
-    "classId": "views",
-    "ownerId": "argonaut",
-    "queryId": "taldedyd",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "taldedyd",
     "properties": {
       "name": {}
     },
-    "baseClassId": "propositions",
+    "baseClassKey": "propositions",
     "type": "object"
   },
   {
     "key": "brffunonkel",
     "name": "Members Table View",
-    "classId": "views",
-    "ownerId": "argonaut",
-    "queryId": "motawins",
-    "nodesPageId": "talcamope38",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "motawins",
+    "nodesPageKey": "talcamope38",
     "properties": {
       "icon": {},
       "name": {}
     },
-    "baseClassId": "accounts",
+    "baseClassKey": "accounts",
     "type": "object"
   },
   {
     "key": "mpilalowathy",
     "name": "Class Form View",
-    "classId": "views",
-    "ownerId": "argonaut",
+    "classKey": "views",
+    "ownerKey": "argonaut",
     "properties": {
       "key": {
         "title": "key",
@@ -2054,12 +2054,12 @@
         "title": "Class Icon",
         "type": "string"
       },
-      "superClassId": {
+      "superClassKey": {
         "pattern": "[a-z][a-z0-9-]{0,17}",
         "argoQuery": {
           "selector": "Subclasses",
           "where": {
-            "classId": "universe"
+            "classKey": "universe"
           },
           "sortBy": "title"
         },
@@ -2084,98 +2084,98 @@
   {
     "key": "reroudorg2",
     "name": "Chart of Accounts Tree View",
-    "classId": "views",
-    "ownerId": "argonaut",
-    "queryId": "mijesonongtheh",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "mijesonongtheh",
     "type": "object"
   },
   {
     "key": "waakj1245",
     "name": "Propositions Tree View",
-    "classId": "views",
-    "ownerId": "argonaut",
-    "queryId": "lesazytiugl",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "lesazytiugl",
     "type": "object"
   },
   {
     "key": "watontcky",
     "name": "Document Form View",
-    "classId": "views",
-    "ownerId": "argonaut",
+    "classKey": "views",
+    "ownerKey": "argonaut",
     "properties": {
       "name": {},
       "description": {},
       "subParagraphIds": {
         "items": {
           "properties": {
-            "paragraphId": {}
+            "paragraphKey": {}
           }
         }
       }
     },
-    "baseClassId": "paragraphs",
+    "baseClassKey": "paragraphs",
     "type": "object"
   },
   {
     "key": "wrihellk",
     "name": "Backlog View",
-    "classId": "views",
-    "ownerId": "argonaut",
-    "queryId": "sg123378",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "sg123378",
     "properties": {
       "startDate": {},
-      "currentStepId": {},
-      "consumerId": {},
+      "currentStepKey": {},
+      "consumerKey": {},
       "name": {}
     },
-    "baseClassId": "agreements",
+    "baseClassKey": "agreements",
     "type": "object"
   },
   {
     "key": "sptshrapa",
     "name": "Document View",
-    "classId": "views",
-    "ownerId": "argonaut",
-    "queryId": "nochickn335",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "nochickn335",
     "type": "object"
   },
   {
     "key": "dcurestway",
     "name": "Agreement Form View",
-    "classId": "views",
-    "ownerId": "argonaut",
-    "queryId": "sg123378",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "sg123378",
     "properties": {
       "key": {},
       "name": {},
-      "currentStepId": {},
-      "consumerId": {},
+      "currentStepKey": {},
+      "consumerKey": {},
       "startDate": {}
     },
-    "baseClassId": "agreements",
+    "baseClassKey": "agreements",
     "type": "object"
   },
   {
     "key": "kicewacerafute",
     "name": "History Table View",
-    "classId": "views",
-    "ownerId": "argonaut",
-    "queryId": "sg123378",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "sg123378",
     "properties": {
       "key": {},
       "name": {},
-      "currentStepId": {},
-      "consumerId": {},
+      "currentStepKey": {},
+      "consumerKey": {},
       "startDate": {}
     },
-    "baseClassId": "agreements",
+    "baseClassKey": "agreements",
     "type": "object"
   },
   {
     "key": "eaigrate",
     "name": "Root Class Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Where Clause",
     "subQueryIds": [
       "yeacippperkth",
@@ -2188,26 +2188,26 @@
   {
     "key": "yeacippperkth",
     "name": "Subclasses Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Where Clause",
     "subQueryIds": [
       "yeacippperkth",
       "latehemesplea3"
     ],
     "where": {
-      "superClassId": "$fk"
+      "superClassKey": "$fk"
     },
     "sortBy": "title"
   },
   {
     "key": "latehemesplea3",
     "name": "Objects Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Where Clause",
     "where": {
-      "classId": "$fk"
+      "classKey": "$fk"
     },
     "subQueryIds": [
       "dishirelten",
@@ -2223,8 +2223,8 @@
   {
     "key": "dishirelten",
     "name": "Page.tabs.pageIds Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Context Object",
     "idsArrayPath": {
       "path": "$.tabs[*].pageId",
@@ -2235,8 +2235,8 @@
   {
     "key": "ckshens7777",
     "name": "Page.tabs.widgets.viewIds Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Context Object",
     "idsArrayPath": {
       "path": "$.tabs[*].widgets[*].viewId",
@@ -2247,8 +2247,8 @@
   {
     "key": "mimamoyloveelar",
     "name": "View.queryId Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Context Object",
     "idsArrayPath": {
       "path": "$.queryId",
@@ -2259,8 +2259,8 @@
   {
     "key": "sinobploxx",
     "name": "View.baseClassId Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Context Object",
     "idsArrayPath": {
       "path": "$.baseClassId",
@@ -2271,8 +2271,8 @@
   {
     "key": "sbetiny1",
     "name": "Query.subQueryIds Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Context Object",
     "idsArrayPath": {
       "path": "$.subQueryIds[*]",
@@ -2283,26 +2283,26 @@
   {
     "key": "femandarpnonon",
     "name": "Owned Processes Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Where Clause",
     "subQueryIds": [
       "sreasfen"
     ],
     "where": {
-      "classId": "processes",
-      "ownerId": "argonaut"
+      "classKey": "processes",
+      "ownerKey": "argonaut"
     }
   },
   {
     "key": "taldedyd",
     "name": "Owned Propositions Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Subclasses",
     "where": {
-      "classId": "propositions",
-      "ownerId": "$fk"
+      "classKey": "propositions",
+      "ownerKey": "$fk"
     },
     "idsArrayPath": {
       "path": "$[*].key",
@@ -2313,8 +2313,8 @@
   {
     "key": "sreasfen",
     "name": "Process.firstStepId Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Context Object",
     "subQueryIds": [
       "gaiindd77"
@@ -2328,8 +2328,8 @@
   {
     "key": "gaiindd77",
     "name": "Step.nextStepIds.stepId Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Context Object",
     "subQueryIds": [
       "gaiindd77"
@@ -2343,8 +2343,8 @@
   {
     "key": "motawins",
     "name": "Members Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Owned Accounts",
     "where": {
       "key": "$fk"
@@ -2354,20 +2354,20 @@
       "indexName": "key"
     },
     "sortBy": "name",
-    "nodesPageId": "talcamope38"
+    "nodesPageKey": "talcamope38"
   },
   {
     "key": "tycterde",
     "name": "Organizational Unit Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Where Clause",
     "subQueryIds": [
       "tycterde",
       "alusboitt"
     ],
     "where": {
-      "classId": "org-units"
+      "classKey": "org-units"
     },
     "filter": {
       "path": "$.permissions[?(@.perm_name == 'owner')].required_auth..accounts[*][?(@.permission == 'owner')].actor",
@@ -2378,8 +2378,8 @@
   {
     "key": "alusboitt",
     "name": "Organizational Active Permission Users Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Context Object",
     "idsArrayPath": {
       "path": "$.permissions[?(@.perm_name == 'active')].required_auth..accounts[*][?(@.permission == 'active')].actor",
@@ -2390,93 +2390,93 @@
   {
     "key": "mijesonongtheh",
     "name": "Chart of Accounts Root Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Where Clause",
     "nodesIcon": "ChartofAccountsRootQuery.svg",
-    "nodesPageId": "pplezeacu11231",
+    "nodesPageKey": "pplezeacu11231",
     "subQueryIds": [
       "cthokogl"
     ],
     "where": {
-      "superClassId": "balance-sheet"
+      "superClassKey": "balance-sheet"
     },
     "sortBy": "title"
   },
   {
     "key": "cthokogl",
     "name": "Chart of Accounts Sub Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Where Clause",
     "nodesIcon": "ChartofAccountsRootQuery.svg",
-    "nodesPageId": "pplezeacu11231",
+    "nodesPageKey": "pplezeacu11231",
     "subQueryIds": [
       "cthokogl"
     ],
     "where": {
-      "superClassId": "$fk"
+      "superClassKey": "$fk"
     },
     "sortBy": "title"
   },
   {
     "key": "lesazytiugl",
     "name": "Propositions Root Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Where Clause",
     "subQueryIds": [
       "nyondepo5",
       "swaserin8as"
     ],
     "where": {
-      "superClassId": "propositions"
+      "superClassKey": "propositions"
     },
     "sortBy": "title"
   },
   {
     "key": "nyondepo5",
     "name": "Propositions Sub Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Where Clause",
     "subQueryIds": [
       "swaserin8as"
     ],
     "where": {
-      "superClassId": "$fk"
+      "superClassKey": "$fk"
     },
     "sortBy": "title"
   },
   {
     "key": "swaserin8as",
     "name": "Propositions Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Where Clause",
     "where": {
-      "classId": "$fk"
+      "classKey": "$fk"
     },
     "sortBy": "name"
   },
   {
     "key": "sg123378",
     "name": "Backlog Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Where Clause",
-    "nodesPageId": "kifehry5",
+    "nodesPageKey": "kifehry5",
     "where": {
-      "classId": "agreements"
+      "classKey": "agreements"
     }
   },
   {
     "key": "nochickn335",
     "name": "First Paragraphs Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Where Clause",
-    "nodesPageId": "mm4nurerors",
+    "nodesPageKey": "mm4nurerors",
     "where": {
       "key": "$fk"
     },
@@ -2491,10 +2491,10 @@
   {
     "key": "nelownar",
     "name": "Subparagraphs Query",
-    "classId": "queries",
-    "ownerId": "argonaut",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
     "selector": "Context Object",
-    "nodesPageId": "mm4nurerors",
+    "nodesPageKey": "mm4nurerors",
     "subQueryIds": [
       "nelownar"
     ],
@@ -2506,8 +2506,8 @@
   {
     "key": "hamby234",
     "name": "Personal Menu",
-    "classId": "menus",
-    "ownerId": "argonaut",
+    "classKey": "menus",
+    "ownerKey": "argonaut",
     "menuArr": [
       {
         "name": "Home",
@@ -2516,24 +2516,24 @@
       {
         "name": "Backlog",
         "icon": "menu-backlog",
-        "pageId": "riditprbt"
+        "pageKey": "riditprbt"
       },
       {
         "name": "Modeling",
         "icon": "menu-modeling",
-        "pageId": "",
+        "pageKey": "",
         "menuArr": [
           {
             "name": "Process Universe",
-            "pageId": "tcncofid"
+            "pageKey": "tcncofid"
           },
           {
             "name": "Process Model",
-            "pageId": "menlxikanonfe"
+            "pageKey": "menlxikanonfe"
           },
           {
             "name": "Process Universe Tree",
-            "pageId": "ritiamay"
+            "pageKey": "ritiamay"
           }
         ]
       }
@@ -2542,8 +2542,8 @@
   {
     "key": "drdshayllily",
     "name": "Generic Menu",
-    "classId": "menus",
-    "ownerId": "bikeshop",
+    "classKey": "menus",
+    "ownerKey": "bikeshop",
     "menuArr": [
       {
         "name": "Home",
@@ -2555,7 +2555,7 @@
         "argoQuery": {
           "sortBy": "name",
           "selector": "Owned Accounts",
-          "nodesPageId": "aiowodro"
+          "nodesPageKey": "aiowodro"
         }
       },
       {
@@ -2564,27 +2564,27 @@
         "menuArr": [
           {
             "name": "Members",
-            "pageId": "pyborerpilngos"
+            "pageKey": "pyborerpilngos"
           },
           {
             "name": "Proposistions",
-            "pageId": "goreddminr"
+            "pageKey": "goreddminr"
           },
           {
             "name": "Agreements",
-            "pageId": "halalalarl"
+            "pageKey": "halalalarl"
           },
           {
             "name": "Scheduling",
-            "pageId": "ggalnstpaxx"
+            "pageKey": "ggalnstpaxx"
           },
           {
             "name": "Backlog",
-            "pageId": "riditprbt"
+            "pageKey": "riditprbt"
           },
           {
             "name": "Document",
-            "pageId": "xfu7bony"
+            "pageKey": "xfu7bony"
           },
           {
             "name": "Roadmap"
@@ -2606,7 +2606,7 @@
             "menuArr": [
               {
                 "name": "Chart of Accounts",
-                "pageId": "termbdryt"
+                "pageKey": "termbdryt"
               },
               {
                 "name": "Accounts Receivable"
@@ -2621,56 +2621,56 @@
             "menuArr": [
               {
                 "name": "Income",
-                "pageId": "baitlothh079"
+                "pageKey": "baitlothh079"
               },
               {
                 "name": "Comprehensive Income",
-                "pageId": ""
+                "pageKey": ""
               },
               {
                 "name": "Balance Sheet",
-                "pageId": "thilarto"
+                "pageKey": "thilarto"
               },
               {
                 "name": "Stockholders' Equity",
-                "pageId": ""
+                "pageKey": ""
               },
               {
                 "name": "Cash Flows",
-                "pageId": "psvoigizy"
+                "pageKey": "psvoigizy"
               },
               {
                 "name": "Notes to Financial Statements",
-                "pageId": ""
+                "pageKey": ""
               }
             ]
           },
           {
             "name": "Managerial",
-            "pageId": ""
+            "pageKey": ""
           },
           {
             "name": "Income Taxes",
-            "pageId": ""
+            "pageKey": ""
           }
         ]
       },
       {
         "name": "Modeling",
         "icon": "Modeling.svg",
-        "pageId": "",
+        "pageKey": "",
         "menuArr": [
           {
             "name": "Process Universe Model",
-            "pageId": "tcncofid"
+            "pageKey": "tcncofid"
           },
           {
             "name": "Process Model",
-            "pageId": "menlxikanonfe"
+            "pageKey": "menlxikanonfe"
           },
           {
             "name": "Process Universe Tree",
-            "pageId": "ritiamay"
+            "pageKey": "ritiamay"
           }
         ]
       }
@@ -2679,8 +2679,8 @@
   {
     "key": "s1ialanewor",
     "name": "Argonaut",
-    "classId": "paragraphs",
-    "ownerId": "argonaut",
+    "classKey": "paragraphs",
+    "ownerKey": "argonaut",
     "description": "<p>Home</p>",
     "subParagraphIds": [
       "tpitmandj2300",
@@ -2691,32 +2691,32 @@
   {
     "key": "tpitmandj2300",
     "name": "What",
-    "classId": "paragraphs",
-    "ownerId": "argonaut",
+    "classKey": "paragraphs",
+    "ownerKey": "argonaut",
     "description": "<p>Contents one</p>",
     "subParagraphIds": []
   },
   {
     "key": "sjoadgo1199",
     "name": "How",
-    "classId": "paragraphs",
-    "ownerId": "argonaut",
+    "classKey": "paragraphs",
+    "ownerKey": "argonaut",
     "description": "<p>Contents two</p>",
     "subParagraphIds": []
   },
   {
     "key": "syoridas",
     "name": "Why",
-    "classId": "paragraphs",
-    "ownerId": "argonaut",
+    "classKey": "paragraphs",
+    "ownerKey": "argonaut",
     "description": "<p>Contents three</p>",
     "subParagraphIds": []
   },
   {
     "key": "paybundumagipi",
     "name": "Bicyle Shop Document",
-    "classId": "paragraphs",
-    "ownerId": "argonaut",
+    "classKey": "paragraphs",
+    "ownerKey": "argonaut",
     "description": "<p>Home</p>",
     "subParagraphIds": [
       "nghivigog",
@@ -2727,87 +2727,87 @@
   {
     "key": "nghivigog",
     "name": "What",
-    "classId": "paragraphs",
-    "ownerId": "argonaut",
+    "classKey": "paragraphs",
+    "ownerKey": "argonaut",
     "description": "<p>Contents one</p>",
     "subParagraphIds": []
   },
   {
     "key": "decalers",
     "name": "How",
-    "classId": "paragraphs",
-    "ownerId": "argonaut",
+    "classKey": "paragraphs",
+    "ownerKey": "argonaut",
     "description": "<p>Contents two</p>",
     "subParagraphIds": []
   },
   {
     "key": "arbumies",
     "name": "Why",
-    "classId": "paragraphs",
-    "ownerId": "argonaut",
+    "classKey": "paragraphs",
+    "ownerKey": "argonaut",
     "description": "<p>Contents three</p>",
     "subParagraphIds": []
   },
   {
     "key": "stmin1984",
     "name": "Buy a Bike",
-    "classId": "purchase-agree",
+    "classKey": "purchase-agree",
     "amount": 100,
     "currency": "EUR",
     "startDate": "2021-05-10",
     "expirationDate": "2025-05-10",
-    "consumerId": "demo-user-09",
-    "providerId": "bikeshop",
-    "assetId": "stapomerna",
-    "propositionId": "coutrcules",
-    "currentStepId": "latiprine"
+    "consumerKey": "demo-user-09",
+    "providerKey": "bikeshop",
+    "assetKey": "stapomerna",
+    "propositionKey": "coutrcules",
+    "currentStepKey": "latiprine"
   },
   {
     "key": "typruplooy32",
     "name": "Rent a Bike",
-    "classId": "rental-agree",
+    "classKey": "rental-agree",
     "amount": 10,
     "currency": "EUR",
     "unitOfTime": "Day",
     "startDate": "2021-05-10",
     "expirationDate": "2025-05-10",
-    "consumerId": "demo-user-09",
-    "providerId": "bikeshop",
-    "assetId": "blkdghf1",
-    "propositionId": "teantoux",
-    "currentStepId": "hthel20044237"
+    "consumerKey": "demo-user-09",
+    "providerKey": "bikeshop",
+    "assetKey": "blkdghf1",
+    "propositionKey": "teantoux",
+    "currentStepKey": "hthel20044237"
   },
   {
     "key": "wawarorky",
     "name": "Fix a Bike",
-    "classId": "service-agree",
+    "classKey": "service-agree",
     "amount": 15,
     "currency": "EUR",
     "startDate": "2021-05-10",
     "expirationDate": "2025-05-10",
-    "consumerId": "demo-user-09",
-    "providerId": "bikeshop",
-    "assetId": "",
-    "propositionId": "emcanrnewamy",
-    "currentStepId": "jondcobavon"
+    "consumerKey": "demo-user-09",
+    "providerKey": "bikeshop",
+    "assetKey": "",
+    "propositionKey": "emcanrnewamy",
+    "currentStepKey": "jondcobavon"
   },
   {
     "key": "peserabakl",
     "name": "Let's meetup at the wattering hole",
     "description": "<p>Do you have time for a get-together? </p>",
-    "classId": "message-agree",
+    "classKey": "message-agree",
     "startDate": "2021-05-10",
     "expirationDate": "2025-05-10",
-    "consumerId": "demo-user-09",
-    "providerId": "bikeshop",
-    "assetId": "",
-    "propositionId": "spalastsensynen",
-    "currentStepId": "truym12428"
+    "consumerKey": "demo-user-09",
+    "providerKey": "bikeshop",
+    "assetKey": "",
+    "propositionKey": "spalastsensynen",
+    "currentStepKey": "truym12428"
   },
   {
     "key": "stapomerna",
     "title": "Blue Bike For Sale",
-    "classId": "inventory",
+    "classKey": "inventory",
     "icon": "BlueBike.svg",
     "value": 120.23,
     "currency": "EUR"
@@ -2815,7 +2815,7 @@
   {
     "key": "iggusthracang",
     "title": "Red Bike For Sale",
-    "classId": "inventory",
+    "classKey": "inventory",
     "icon": "RedBike.svg",
     "value": 130.25,
     "currency": "EUR"
@@ -2823,7 +2823,7 @@
   {
     "key": "spallllinve",
     "title": "Green Bike For Sale",
-    "classId": "inventory",
+    "classKey": "inventory",
     "icon": "GreenBike.svg",
     "value": 150.89,
     "currency": "EUR"
@@ -2831,7 +2831,7 @@
   {
     "key": "blkdghf1",
     "title": "Blue Bike For Rent",
-    "classId": "for-sale",
+    "classKey": "for-sale",
     "icon": "BlueBike.svg",
     "value": 120.23,
     "currency": "EUR"
@@ -2839,7 +2839,7 @@
   {
     "key": "vears14fourma",
     "title": "Red Bike For Rent",
-    "classId": "for-sale",
+    "classKey": "for-sale",
     "icon": "RedBike.svg",
     "value": 130.56,
     "currency": "EUR"
@@ -2847,7 +2847,7 @@
   {
     "key": "gtyurarthe",
     "title": "Green Bike For Rent",
-    "classId": "for-sale",
+    "classKey": "for-sale",
     "icon": "GreenBike.svg",
     "value": 150.89,
     "currency": "EUR"

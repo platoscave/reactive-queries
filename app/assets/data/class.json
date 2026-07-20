@@ -17,12 +17,12 @@
                 "title": "Name",
                 "type": "string"
             },
-            "classId": {
+            "classKey": {
                 "pattern": "[a-z][a-z0-9-]{0,17}",
                 "argoQuery": {
                     "selector": "Subclasses",
                     "where": {
-                        "classId": "universe"
+                        "classKey": "universe"
                     },
                     "sortBy": "title"
                 },
@@ -57,7 +57,7 @@
         "title": "Agreements",
         "description": "<p>Contracts between accounts about resources</p>",
         "classIcon": "Agreements.svg",
-        "superClassId": "universe",
+        "superClassKey": "universe",
         "properties": {
             "startDate": {
                 "title": "Request Date",
@@ -75,12 +75,12 @@
                 "title": "Currency",
                 "type": "string"
             },
-            "consumerId": {
+            "consumerKey": {
                 "pattern": "[a-z][a-z0-9-]{0,17}",
                 "argoQuery": {
                     "selector": "Subclasses",
                     "where": {
-                        "classId": "accounts"
+                        "classKey": "accounts"
                     },
                     "idsArrayPath": {
                         "path": "$[*].key",
@@ -91,12 +91,12 @@
                 "title": "Consumer",
                 "type": "string"
             },
-            "providerId": {
+            "providerKey": {
                 "pattern": "[a-z][a-z0-9-]{0,17}",
                 "argoQuery": {
                     "selector": "Subclasses",
                     "where": {
-                        "classId": "accounts"
+                        "classKey": "accounts"
                     },
                     "idsArrayPath": {
                         "path": "$[*].key",
@@ -107,12 +107,12 @@
                 "title": "Provider",
                 "type": "string"
             },
-            "assetId": {
+            "assetKey": {
                 "pattern": "[a-z][a-z0-9-]{0,17}",
                 "argoQuery": {
                     "selector": "Subclasses",
                     "where": {
-                        "classId": "assets"
+                        "classKey": "assets"
                     },
                     "idsArrayPath": {
                         "path": "$[*].key",
@@ -123,12 +123,12 @@
                 "title": "Asset",
                 "type": "string"
             },
-            "propositionId": {
+            "propositionKey": {
                 "pattern": "[a-z][a-z0-9-]{0,17}",
                 "argoQuery": {
                     "selector": "Subclasses",
                     "where": {
-                        "classId": "processes"
+                        "classKey": "processes"
                     },
                     "idsArrayPath": {
                         "path": "$[*].key",
@@ -139,12 +139,12 @@
                 "title": "Agreememt Process",
                 "type": "string"
             },
-            "currentStepId": {
+            "currentStepKey": {
                 "pattern": "[a-z][a-z0-9-]{0,17}",
                 "argoQuery": {
                     "selector": "Subclasses",
                     "where": {
-                        "classId": "steps"
+                        "classKey": "steps"
                     },
                     "idsArrayPath": {
                         "path": "$[*].key",
@@ -162,14 +162,14 @@
         "key": "resources",
         "title": "Resources",
         "description": "<p>Things owned by users/organizations</p>",
-        "superClassId": "universe",
+        "superClassKey": "universe",
         "properties": {
-            "ownerId": {
+            "ownerKey": {
                 "pattern": "[a-z][a-z0-9-]{0,17}",
                 "argoQuery": {
                     "selector": "Subclasses",
                     "where": {
-                        "classId": "accounts"
+                        "classKey": "accounts"
                     },
                     "idsArrayPath": {
                         "path": "$[*].key",
@@ -191,7 +191,7 @@
         "title": "Rental Agreements",
         "description": "<p>Contracts between accounts about resources</p>",
         "classIcon": "Agreements.svg",
-        "superClassId": "agreements",
+        "superClassKey": "agreements",
         "properties": {
             "recardianContract": {
                 "const": "<div><h1>Rental Agreement</h1><p><a href='${locationStr}${providerId}.smaraspaled'>${providerName}</a> promises to deliver <a href='${locationStr}${assestId}.smaraspaled'>${assetName}</a> to <a href='${locationStr}${consumerId}.smaraspaled'>${consumerName}</a> by ${expirationDate} for the amount of ${amount} ${currency}</p><ul><li>Proposition: <a href='${locationStr}${propositionId}.smaraspaled'>${propositionName}</a>  </li><li>Process: <a href='${locationStr}${processId}.smaraspaled'>${processName}</a>  </li><li>Current Step: <a href='${locationStr}${currentStepId}.smaraspaled'>${currentStepName}</a>  </li></ul></div>",
@@ -218,7 +218,7 @@
         "title": "Service Agreements",
         "description": "<p>Contracts between accounts about resources</p>",
         "classIcon": "Agreements.svg",
-        "superClassId": "agreements",
+        "superClassKey": "agreements",
         "properties": {
             "recardianContract": {
                 "const": "<div><h1>Service Agreement</h1><p><a href='${locationStr}${providerId}.smaraspaled'>${providerName}</a> promises to deliver <a href='${locationStr}${assestId}.smaraspaled'>${assetName}</a> to <a href='${locationStr}${consumerId}.smaraspaled'>${consumerName}</a> by ${expirationDate} for the amount of ${amount} ${currency}</p><ul><li>Proposition: <a href='${locationStr}${propositionId}.smaraspaled'>${propositionName}</a>  </li><li>Process: <a href='${locationStr}${processId}.smaraspaled'>${processName}</a>  </li><li>Current Step: <a href='${locationStr}${currentStepId}.smaraspaled'>${currentStepName}</a>  </li></ul></div>",

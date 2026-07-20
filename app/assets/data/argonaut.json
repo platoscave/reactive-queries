@@ -2,10 +2,10 @@
     {
         "key": "xfu7bony",
         "name": "Document Tree Master Detail",
-        "classId": "pages",
+        "classKey": "pages",
         "layout": "Master Detail",
         "divider": "Vertical",
-        "ownerId": "argonaut",
+        "ownerKey": "argonaut",
         "tabs": [
             {
                 "name": "Document Tree",
@@ -13,7 +13,7 @@
                     {
                         "widgetType": "Tree",
                         "name": "Document Tree",
-                        "viewId": "sptshrapa"
+                        "viewKey": "sptshrapa"
                     }
                 ]
             }
@@ -22,9 +22,9 @@
     {
         "key": "mm4nurerors",
         "name": "Document Form Page",
-        "classId": "pages",
+        "classKey": "pages",
         "layout": "Page",
-        "ownerId": "argonaut",
+        "ownerKey": "argonaut",
         "tabs": [
             {
                 "name": "Document",
@@ -32,7 +32,7 @@
                     {
                         "widgetType": "Document",
                         "name": "Document Form",
-                        "viewId": "watontcky"
+                        "viewKey": "watontcky"
                     }
                 ]
             }
@@ -41,37 +41,37 @@
     {
         "key": "sptshrapa",
         "name": "Document View",
-        "classId": "views",
-        "ownerId": "argonaut",
-        "queryId": "nochickn335",
+        "classKey": "views",
+        "ownerKey": "argonaut",
+        "queryKey": "nochickn335",
         "type": "object"
     },
     {
         "key": "watontcky",
         "name": "Document Form View",
-        "classId": "views",
-        "ownerId": "argonaut",
+        "classKey": "views",
+        "ownerKey": "argonaut",
         "properties": {
             "name": {},
             "description": {},
             "subParagraphIds": {
                 "items": {
                     "properties": {
-                        "paragraphId": {}
+                        "paragraphKey": {}
                     }
                 }
             }
         },
-        "baseClassId": "paragraphs",
+        "baseClassKey": "paragraphs",
         "type": "object"
     },
     {
         "key": "nochickn335",
         "name": "First Paragraphs Query",
-        "classId": "queries",
-        "ownerId": "argonaut",
+        "classKey": "queries",
+        "ownerKey": "argonaut",
         "selector": "Where Clause",
-        "nodesPageId": "mm4nurerors",
+        "nodesPageKey": "mm4nurerors",
         "where": {
             "key": "$fk"
         },
@@ -86,10 +86,10 @@
     {
         "key": "nelownar",
         "name": "Subparagraphs Query",
-        "classId": "queries",
-        "ownerId": "argonaut",
+        "classKey": "queries",
+        "ownerKey": "argonaut",
         "selector": "Context Object",
-        "nodesPageId": "mm4nurerors",
+        "nodesPageKey": "mm4nurerors",
         "subQueryIds": [
             "nelownar"
         ],

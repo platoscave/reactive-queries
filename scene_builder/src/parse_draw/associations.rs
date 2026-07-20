@@ -6,7 +6,7 @@ use crate::parse_draw::*;
 #[derive(Component)]
 pub struct PendingAssociation {
     pub from_key: String,
-    pub to_class_id: String,
+    pub to_class_key: String,
     pub title: String,
 }
 
@@ -71,10 +71,10 @@ pub fn resolve_pending_associations(
             commands.entity(assoc_entity).despawn();
             continue;
         };
-        let Some(&to_ent) = registry.0.get(&assoc.to_class_id) else {
+        let Some(&to_ent) = registry.0.get(&assoc.to_class_key) else {
             warn!(
                 "Association destination not found in key registry: {}",
-                assoc.to_class_id
+                assoc.to_class_key
             );
             commands.entity(assoc_entity).despawn();
             continue;
