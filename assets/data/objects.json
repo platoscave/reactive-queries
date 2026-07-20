@@ -1,0 +1,2855 @@
+[
+  {
+    "key": "spalastsensynen",
+    "name": "Message Proposition",
+    "description": "<p>Message Proposition</p>",
+    "classKey": "purchase-prop",
+    "ownerKey": "bikeshop",
+    "startDate": "2019-08-10T14:49:54.500",
+    "endDate": "2025-08-10T14:49:54.500",
+    "processKey": "manainoshs",
+    "assetIds": []
+  },
+  {
+    "key": "coutrcules",
+    "name": "Purchase Proposition",
+    "description": "<p>Purchase Proposition</p>",
+    "classKey": "purchase-prop",
+    "ownerKey": "bikeshop",
+    "startDate": "2019-08-10T14:49:54.500",
+    "endDate": "2025-08-10T14:49:54.500",
+    "processKey": "maynexperg",
+    "subprocessKey": "cheldanecibem",
+    "assetIds": [
+      "stapomerna",
+      "iggusthracang",
+      "spallllinve"
+    ]
+  },
+  {
+    "key": "teantoux",
+    "name": "Rental Proposition",
+    "description": "<p>Rental Proposition</p>",
+    "classKey": "rental-prop",
+    "ownerKey": "bikeshop",
+    "startDate": "2019-08-10T14:49:54.500",
+    "endDate": "2025-08-10T14:49:54.500",
+    "processKey": "thl00068",
+    "subprocessKey": "makherkargs",
+    "assetIds": [
+      "blkdghf1",
+      "vears14fourma",
+      "gtyurarthe"
+    ]
+  },
+  {
+    "key": "emcanrnewamy",
+    "name": "Repair Proposition",
+    "description": "<p>Repair Proposition</p>",
+    "classKey": "repair-prop",
+    "ownerKey": "bikeshop",
+    "startDate": "2019-08-10T14:49:54.500",
+    "endDate": "2025-08-10T14:49:54.500",
+    "processKey": "heicaqure98",
+    "subprocessKey": "usrsisquk115",
+    "assetIds": []
+  },
+  {
+    "key": "platoscave",
+    "name": "platoscave",
+    "icon": "platoscave.png",
+    "classKey": "users",
+    "account_name": "platoscave",
+    "head_block_num": 73306938,
+    "head_block_time": "2019-08-10T14:49:54.500",
+    "privileged": false,
+    "last_code_update": "1970-01-01T00:00:00.000",
+    "created": "2018-06-17T11:58:51.500",
+    "core_liquid_balance": "1.9920 EOS",
+    "ram_quota": 5378,
+    "net_weight": 21000,
+    "cpu_weight": 21000,
+    "net_limit": {
+      "used": 145,
+      "available": 1888827,
+      "max": 1888972
+    },
+    "cpu_limit": {
+      "used": 275,
+      "available": 337191,
+      "max": 337466
+    },
+    "ram_usage": 3822,
+    "permissions": [
+      {
+        "perm_name": "active",
+        "parent": "owner",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS7iDk4oo8MKkhMPAtNf2ut6mYrHJor2qQ6eK5trcxBjJXmv6Mwe",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      },
+      {
+        "perm_name": "owner",
+        "parent": "",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS7iDk4oo8MKkhMPAtNf2ut6mYrHJor2qQ6eK5trcxBjJXmv6Mwe",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      }
+    ],
+    "total_resources": {
+      "owner": "platoscave",
+      "net_weight": "2.1000 EOS",
+      "cpu_weight": "2.1000 EOS",
+      "ram_bytes": 3978
+    },
+    "self_delegated_bandwidth": {
+      "from": "platoscave",
+      "to": "platoscave",
+      "net_weight": "2.0000 EOS",
+      "cpu_weight": "2.0000 EOS"
+    },
+    "refund_request": null,
+    "voter_info": {
+      "owner": "platoscave",
+      "proxy": "",
+      "producers": [
+        "cypherglasss"
+      ],
+      "staked": 40000,
+      "last_vote_weight": "27745957383.52319717407226562",
+      "proxied_vote_weight": "0.00000000000000000",
+      "is_proxy": 0,
+      "flags1": 0,
+      "reserved2": 0,
+      "reserved3": "0 "
+    }
+  },
+  {
+    "key": "demo-user-01",
+    "name": "Mom",
+    "classKey": "users",
+    "icon": "Mom.jpg",
+    "permissions": [
+      {
+        "perm_name": "owner",
+        "parent": "",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS8fzzEVMqCdj8izdXPnVzyBjJFqGK3mahR36v8x54eofraHxgW7",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      },
+      {
+        "perm_name": "active",
+        "parent": "owner",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS8fzzEVMqCdj8izdXPnVzyBjJFqGK3mahR36v8x54eofraHxgW7",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      }
+    ]
+  },
+  {
+    "key": "demo-user-02",
+    "name": "Pop",
+    "classKey": "users",
+    "icon": "Pop.jpg",
+    "permissions": [
+      {
+        "perm_name": "owner",
+        "parent": "",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS7AfgnCaRAFQFWSYe6AD4jz5Gk1gy5VHzoSuFNHCq8BbMgzQDg1",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      },
+      {
+        "perm_name": "active",
+        "parent": "owner",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS7AfgnCaRAFQFWSYe6AD4jz5Gk1gy5VHzoSuFNHCq8BbMgzQDg1",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      }
+    ]
+  },
+  {
+    "key": "demo-user-03",
+    "name": "Assistant",
+    "classKey": "users",
+    "icon": "Assistant.jpg",
+    "permissions": [
+      {
+        "perm_name": "owner",
+        "parent": "",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS6pwMQ7cShSSdoyVHecfeNE5hxJE6wiRsCxSoDNVm9Hc52VSajt",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      },
+      {
+        "perm_name": "active",
+        "parent": "owner",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS6pwMQ7cShSSdoyVHecfeNE5hxJE6wiRsCxSoDNVm9Hc52VSajt",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      }
+    ]
+  },
+  {
+    "key": "demo-user-04",
+    "name": "Receptionist One",
+    "classKey": "users",
+    "icon": "ReceptionistOne.jpg",
+    "permissions": [
+      {
+        "perm_name": "owner",
+        "parent": "",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS8DjnakK6hF8Ba36W7QiMfQX1K57tvUgLgUhPJGPMU8vUNMeHUT",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      },
+      {
+        "perm_name": "active",
+        "parent": "owner",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS8DjnakK6hF8Ba36W7QiMfQX1K57tvUgLgUhPJGPMU8vUNMeHUT",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      }
+    ]
+  },
+  {
+    "key": "demo-user-05",
+    "name": "Nurse One",
+    "classKey": "users",
+    "icon": "NurseOne.jpg",
+    "permissions": [
+      {
+        "perm_name": "owner",
+        "parent": "",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS8T6e9S3FvQr3K44sSXVRarnrJNesCSggKDiJ9GXsGRzid3oS6o",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      },
+      {
+        "perm_name": "active",
+        "parent": "owner",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS8T6e9S3FvQr3K44sSXVRarnrJNesCSggKDiJ9GXsGRzid3oS6o",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      }
+    ]
+  },
+  {
+    "key": "demo-user-06",
+    "name": "Nurse Two",
+    "classKey": "users",
+    "icon": "NurseTwo.jpg",
+    "permissions": [
+      {
+        "perm_name": "owner",
+        "parent": "",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS4tynHhgMi13X1CPxZReTyQQhegkbZCimtmEEkET4nmX2TnNPG3",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      },
+      {
+        "perm_name": "active",
+        "parent": "owner",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS4tynHhgMi13X1CPxZReTyQQhegkbZCimtmEEkET4nmX2TnNPG3",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      }
+    ]
+  },
+  {
+    "key": "demo-user-07",
+    "name": "Physician One",
+    "classKey": "users",
+    "icon": "PhysicianOne.jpg",
+    "permissions": [
+      {
+        "perm_name": "owner",
+        "parent": "",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS7bgCwFMJ3tu67YEeUg4za6AqjaLpgN1G8XYPMtekgQnmgePAyp",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      },
+      {
+        "perm_name": "active",
+        "parent": "owner",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS7bgCwFMJ3tu67YEeUg4za6AqjaLpgN1G8XYPMtekgQnmgePAyp",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      }
+    ]
+  },
+  {
+    "key": "demo-user-08",
+    "name": "Physician Two",
+    "classKey": "users",
+    "icon": "PhysicianTwo.jpg",
+    "permissions": [
+      {
+        "perm_name": "owner",
+        "parent": "",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS8PmiVUbxdap1gcmQhCSpisBc2KL382nqXdywa7pE6pVhKGRngu",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      },
+      {
+        "perm_name": "active",
+        "parent": "owner",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS8PmiVUbxdap1gcmQhCSpisBc2KL382nqXdywa7pE6pVhKGRngu",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      }
+    ]
+  },
+  {
+    "key": "demo-user-09",
+    "name": "Consumer One",
+    "classKey": "users",
+    "icon": "ConsumerOne.jpg",
+    "permissions": [
+      {
+        "perm_name": "owner",
+        "parent": "",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS5RjvwHAxcz22REydgm5RND4PgRivU9Sg3Sn133P9ci9GD3opnC",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      },
+      {
+        "perm_name": "active",
+        "parent": "owner",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS5RjvwHAxcz22REydgm5RND4PgRivU9Sg3Sn133P9ci9GD3opnC",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      }
+    ]
+  },
+  {
+    "key": "demo-user-10",
+    "name": "Consumer Two",
+    "classKey": "users",
+    "icon": "ConsumerTwo.jpg",
+    "permissions": [
+      {
+        "perm_name": "owner",
+        "parent": "",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS55M49ULWoE5kY8EN27fU3RhCwvEBA2HPKd9YSC7ttRHWTr4W1s",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      },
+      {
+        "perm_name": "active",
+        "parent": "owner",
+        "required_auth": {
+          "threshold": 1,
+          "keys": [
+            {
+              "key": "EOS55M49ULWoE5kY8EN27fU3RhCwvEBA2HPKd9YSC7ttRHWTr4W1s",
+              "weight": 1
+            }
+          ],
+          "accounts": [],
+          "waits": []
+        }
+      }
+    ]
+  },
+  {
+    "key": "argonaut",
+    "name": "Argonaut",
+    "classKey": "non-profit",
+    "icon": "Argonaut.svg",
+    "subParagraphIds": [
+      "s1ialanewor"
+    ],
+    "permissions": [
+      {
+        "perm_name": "owner",
+        "parent": "",
+        "required_auth": {
+          "threshold": 1,
+          "accounts": [
+            {
+              "permission": {
+                "actor": "platoscave",
+                "permission": "owner"
+              },
+              "weight": 1
+            }
+          ],
+          "keys": [],
+          "waits": []
+        }
+      },
+      {
+        "perm_name": "active",
+        "parent": "owner",
+        "required_auth": {
+          "threshold": 1,
+          "accounts": [
+            {
+              "permission": {
+                "actor": "platoscave",
+                "permission": "active"
+              },
+              "weight": 1
+            }
+          ],
+          "keys": [],
+          "waits": []
+        }
+      }
+    ]
+  },
+  {
+    "key": "bikeshop",
+    "name": "DEMO Bicycle Shop",
+    "classKey": "commercial",
+    "icon": "DEMOBicycleShop.svg",
+    "subParagraphIds": [
+      "paybundumagipi"
+    ],
+    "permissions": [
+      {
+        "perm_name": "owner",
+        "parent": "",
+        "required_auth": {
+          "threshold": 1,
+          "accounts": [
+            {
+              "permission": {
+                "actor": "argonaut",
+                "permission": "owner"
+              },
+              "weight": 1
+            }
+          ],
+          "keys": [],
+          "waits": []
+        }
+      },
+      {
+        "perm_name": "active",
+        "parent": "owner",
+        "required_auth": {
+          "threshold": 1,
+          "accounts": [
+            {
+              "permission": {
+                "actor": "argonaut",
+                "permission": "active"
+              },
+              "weight": 1
+            }
+          ],
+          "keys": [],
+          "waits": []
+        }
+      }
+    ]
+  },
+  {
+    "key": "clinic",
+    "name": "DEMO Clinic",
+    "description": "",
+    "classKey": "non-profit",
+    "icon": "DEMOClinic.svg",
+    "permissions": [
+      {
+        "perm_name": "owner",
+        "parent": "",
+        "required_auth": {
+          "threshold": 1,
+          "accounts": [
+            {
+              "permission": {
+                "actor": "argonaut",
+                "permission": "owner"
+              },
+              "weight": 1
+            }
+          ],
+          "keys": [],
+          "waits": []
+        }
+      },
+      {
+        "perm_name": "active",
+        "parent": "owner",
+        "required_auth": {
+          "threshold": 1,
+          "accounts": [
+            {
+              "permission": {
+                "actor": "argonaut",
+                "permission": "active"
+              },
+              "weight": 1
+            }
+          ],
+          "keys": [],
+          "waits": []
+        }
+      }
+    ]
+  },
+  {
+    "key": "clinic-desk",
+    "name": "Clinic Reception",
+    "classKey": "org-units",
+    "ownerKey": "clinic",
+    "permissions": [
+      {
+        "perm_name": "owner",
+        "parent": "",
+        "required_auth": {
+          "threshold": 1,
+          "accounts": [
+            {
+              "permission": {
+                "actor": "clinic",
+                "permission": "owner"
+              },
+              "weight": 1
+            }
+          ],
+          "keys": [],
+          "waits": []
+        }
+      },
+      {
+        "perm_name": "active",
+        "parent": "owner",
+        "required_auth": {
+          "threshold": 1,
+          "accounts": [
+            {
+              "permission": {
+                "actor": "demo-user-04",
+                "permission": "active"
+              },
+              "weight": 1
+            }
+          ],
+          "keys": [],
+          "waits": []
+        }
+      }
+    ]
+  },
+  {
+    "key": "clinic-consult",
+    "name": "Clinic Consulting Room",
+    "classKey": "org-units",
+    "ownerKey": "clinic",
+    "permissions": [
+      {
+        "perm_name": "owner",
+        "parent": "",
+        "required_auth": {
+          "threshold": 1,
+          "accounts": [
+            {
+              "permission": {
+                "actor": "clinic",
+                "permission": "owner"
+              },
+              "weight": 1
+            }
+          ],
+          "keys": [],
+          "waits": []
+        }
+      },
+      {
+        "perm_name": "active",
+        "parent": "owner",
+        "required_auth": {
+          "threshold": 1,
+          "accounts": [
+            {
+              "permission": {
+                "actor": "demo-user-06",
+                "permission": "active"
+              },
+              "weight": 1
+            },
+            {
+              "permission": {
+                "actor": "demo-user-10",
+                "permission": "active"
+              },
+              "weight": 1
+            },
+            {
+              "permission": {
+                "actor": "demo-user-05",
+                "permission": "active"
+              },
+              "weight": 1
+            },
+            {
+              "permission": {
+                "actor": "demo-user-06",
+                "permission": "active"
+              },
+              "weight": 1
+            }
+          ],
+          "keys": [],
+          "waits": []
+        }
+      }
+    ]
+  },
+  {
+    "key": "withbap400",
+    "name": "Messaging",
+    "description": "",
+    "classKey": "org-units",
+    "ownerKey": "argonaut",
+    "permissions": [
+      {
+        "perm_name": "owner",
+        "parent": "",
+        "required_auth": {
+          "threshold": 1,
+          "accounts": [
+            {
+              "permission": {
+                "actor": "argonaut",
+                "permission": "owner"
+              },
+              "weight": 1
+            }
+          ],
+          "keys": [],
+          "waits": []
+        }
+      },
+      {
+        "perm_name": "active",
+        "parent": "owner",
+        "required_auth": {
+          "threshold": 1,
+          "accounts": [
+            {
+              "permission": {
+                "actor": "platoscave",
+                "permission": "active"
+              },
+              "weight": 1
+            }
+          ],
+          "keys": [],
+          "waits": []
+        }
+      }
+    ]
+  },
+  {
+    "key": "bikeshop-desk",
+    "name": "Shop Front Desk",
+    "classKey": "org-units",
+    "icon": "ShopFrontDesk.svg",
+    "parentOrgKey": "bikeshop",
+    "permissions": [
+      {
+        "perm_name": "owner",
+        "parent": "",
+        "required_auth": {
+          "threshold": 1,
+          "accounts": [
+            {
+              "permission": {
+                "actor": "bikeshop",
+                "permission": "owner"
+              },
+              "weight": 1
+            }
+          ],
+          "keys": [],
+          "waits": []
+        }
+      },
+      {
+        "perm_name": "active",
+        "parent": "owner",
+        "required_auth": {
+          "threshold": 1,
+          "accounts": [
+            {
+              "permission": {
+                "actor": "demo-user-01",
+                "permission": "active"
+              },
+              "weight": 1
+            },
+            {
+              "permission": {
+                "actor": "demo-user-02",
+                "permission": "active"
+              },
+              "weight": 1
+            }
+          ],
+          "keys": [],
+          "waits": []
+        }
+      }
+    ]
+  },
+  {
+    "key": "bikeshop-shop",
+    "name": "Shop Workshop",
+    "classKey": "org-units",
+    "icon": "ShopWorkshop.svg",
+    "parentOrgKey": "bikeshop",
+    "permissions": [
+      {
+        "perm_name": "owner",
+        "parent": "",
+        "required_auth": {
+          "threshold": 1,
+          "accounts": [
+            {
+              "permission": {
+                "actor": "bikeshop",
+                "permission": "owner"
+              },
+              "weight": 1
+            }
+          ],
+          "keys": [],
+          "waits": []
+        }
+      },
+      {
+        "perm_name": "active",
+        "parent": "owner",
+        "required_auth": {
+          "threshold": 1,
+          "accounts": [
+            {
+              "permission": {
+                "actor": "demo-user-01",
+                "permission": "active"
+              },
+              "weight": 1
+            },
+            {
+              "permission": {
+                "actor": "demo-user-02",
+                "permission": "active"
+              },
+              "weight": 1
+            },
+            {
+              "permission": {
+                "actor": "demo-user-03",
+                "permission": "active"
+              },
+              "weight": 1
+            }
+          ],
+          "keys": [],
+          "waits": []
+        }
+      }
+    ]
+  },
+  {
+    "key": "manainoshs",
+    "name": "Bicycle Shop Messaging",
+    "description": "<p>Messaging Request Process</p>",
+    "classKey": "processes",
+    "returnActions": [
+      "happy",
+      "unhappy"
+    ],
+    "firstStepKey": "truym12428",
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "cheldanecibem",
+    "name": "Bicycle Shop Purchase Process",
+    "description": "<p>Bicycle Shop Purchase Process</p>",
+    "classKey": "sub-processes",
+    "returnActions": [
+      "happy",
+      "unhappy"
+    ],
+    "firstStepKey": "ja13daleo",
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "maynexperg",
+    "name": "Argonaut Purchase Process",
+    "description": "<p>Purchase</p>",
+    "classKey": "processes",
+    "returnActions": [
+      "happy",
+      "unhappy",
+      "reject"
+    ],
+    "firstStepKey": "latiprine",
+    "ownerKey": "argonaut"
+  },
+  {
+    "key": "thl00068",
+    "name": "Argonaut Rental Process",
+    "description": "<p>Purchase</p>",
+    "classKey": "processes",
+    "returnActions": [
+      "happy",
+      "unhappy",
+      "reject"
+    ],
+    "firstStepKey": "wocherr9",
+    "ownerKey": "argonaut"
+  },
+  {
+    "key": "wocherr9",
+    "name": "Validate",
+    "description": "<p>Validate</p>",
+    "classKey": "execute",
+    "nextStepIds": [
+      {
+        "action": "happy",
+        "stepKey": "gelmerer9"
+      },
+      {
+        "action": "reject"
+      }
+    ],
+    "execute": [
+      "validate ownership",
+      "product escrow",
+      "payment escrow"
+    ],
+    "ownerKey": "argonaut"
+  },
+  {
+    "key": "gelmerer9",
+    "name": "Perform",
+    "description": "<p>Perform</p>",
+    "classKey": "delegate",
+    "nextStepIds": [
+      {
+        "action": "happy",
+        "stepKey": "stssenee9cer"
+      },
+      {
+        "action": "unhappy",
+        "stepKey": "heberghren"
+      }
+    ],
+    "deligateProcessKey": "cheldanecibem",
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "stssenee9cer",
+    "name": "Acceptance",
+    "description": "<p>Acceptance</p>",
+    "classKey": "consumer",
+    "nextStepIds": [
+      {
+        "action": "happy",
+        "stepKey": "uniigroodeco7"
+      },
+      {
+        "action": "unhappy",
+        "stepKey": "heberghren"
+      }
+    ],
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "uniigroodeco7",
+    "name": "Transact",
+    "description": "<p>Transact</p>",
+    "classKey": "execute",
+    "nextStepIds": [
+      {
+        "action": "happy"
+      }
+    ],
+    "execute": [
+      "transfer product ownership",
+      "transfer payment"
+    ],
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "heberghren",
+    "name": "Rollback",
+    "description": "<p>Rollback</p>",
+    "classKey": "execute",
+    "nextStepIds": [
+      {
+        "action": "unhappy"
+      }
+    ],
+    "execute": [
+      "return payment"
+    ],
+    "ownerKey": "argonaut"
+  },
+  {
+    "key": "heicaqure98",
+    "name": "Argonaut Service Process",
+    "description": "<p>Purchase</p>",
+    "classKey": "processes",
+    "returnActions": [
+      "happy",
+      "unhappy",
+      "reject"
+    ],
+    "firstStepKey": "ndelionat5",
+    "ownerKey": "argonaut"
+  },
+  {
+    "key": "ndelionat5",
+    "name": "Validate",
+    "description": "<p>Validate</p>",
+    "classKey": "execute",
+    "nextStepIds": [
+      {
+        "action": "happy",
+        "stepKey": "lesatime23"
+      },
+      {
+        "action": "reject"
+      }
+    ],
+    "execute": [
+      "validate ownership",
+      "product escrow",
+      "payment escrow"
+    ],
+    "ownerKey": "argonaut"
+  },
+  {
+    "key": "lesatime23",
+    "name": "Perform",
+    "description": "<p>Perform</p>",
+    "classKey": "delegate",
+    "nextStepIds": [
+      {
+        "action": "happy",
+        "stepKey": "jmdoro3mace"
+      },
+      {
+        "action": "unhappy",
+        "stepKey": "dafermmoverife"
+      }
+    ],
+    "deligateProcessKey": "cheldanecibem",
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "jmdoro3mace",
+    "name": "Acceptance",
+    "description": "<p>Acceptance</p>",
+    "classKey": "consumer",
+    "nextStepIds": [
+      {
+        "action": "happy",
+        "stepKey": "forthhsbedly"
+      },
+      {
+        "action": "unhappy",
+        "stepKey": "dafermmoverife"
+      }
+    ],
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "forthhsbedly",
+    "name": "Transact",
+    "description": "<p>Transact</p>",
+    "classKey": "execute",
+    "nextStepIds": [
+      {
+        "action": "happy"
+      }
+    ],
+    "execute": [
+      "transfer product ownership",
+      "transfer payment"
+    ],
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "dafermmoverife",
+    "name": "Rollback",
+    "description": "<p>Rollback</p>",
+    "classKey": "execute",
+    "nextStepIds": [
+      {
+        "action": "unhappy"
+      }
+    ],
+    "execute": [
+      "return payment"
+    ],
+    "ownerKey": "argonaut"
+  },
+  {
+    "key": "tgiouraykamus",
+    "name": "Success",
+    "description": "<p>Success</p>",
+    "classKey": "closed",
+    "ownerKey": "argonaut"
+  },
+  {
+    "key": "s4farfrk986",
+    "name": "Failed",
+    "description": "<p>Failed</p>",
+    "classKey": "closed",
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "latiprine",
+    "name": "Validate",
+    "description": "<p>Validate</p>",
+    "classKey": "execute",
+    "nextStepIds": [
+      {
+        "action": "happy",
+        "stepKey": "mdilizibonx"
+      },
+      {
+        "action": "reject"
+      }
+    ],
+    "execute": [
+      "validate ownership",
+      "product escrow",
+      "payment escrow"
+    ],
+    "ownerKey": "argonaut"
+  },
+  {
+    "key": "sthowg12319",
+    "name": "Rollback",
+    "description": "<p>Rollback</p>",
+    "classKey": "execute",
+    "nextStepIds": [
+      {
+        "action": "unhappy"
+      }
+    ],
+    "execute": [
+      "return payment"
+    ],
+    "ownerKey": "argonaut"
+  },
+  {
+    "key": "bouranhuneprit",
+    "name": "Transact",
+    "description": "<p>Transact</p>",
+    "classKey": "execute",
+    "nextStepIds": [
+      {
+        "action": "happy"
+      }
+    ],
+    "execute": [
+      "transfer product ownership",
+      "transfer payment"
+    ],
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "mdilizibonx",
+    "name": "Perform",
+    "description": "<p>Perform</p>",
+    "classKey": "delegate",
+    "nextStepIds": [
+      {
+        "action": "happy",
+        "stepKey": "ghasllosheyanouir"
+      },
+      {
+        "action": "unhappy",
+        "stepKey": "sthowg12319"
+      }
+    ],
+    "deligateProcessKey": "cheldanecibem",
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "truym12428",
+    "name": "Question",
+    "description": "<p>Question</p>",
+    "classKey": "provider",
+    "nextStepIds": [
+      {
+        "action": "happy",
+        "stepKey": "ppqusiapangee"
+      },
+      {
+        "action": "unhappy"
+      }
+    ],
+    "ownerKey": "demo-user-08"
+  },
+  {
+    "key": "tchbowledac",
+    "name": "Expedite",
+    "description": "<p>Expedite</p>",
+    "classKey": "provider",
+    "nextStepIds": [
+      {
+        "action": "happy"
+      }
+    ],
+    "authorizedOrgUnitKey": "bikeshop-shop",
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "usrsisquk115",
+    "name": "Bicycle Shop Repair Process",
+    "description": "<p>Bicycle Shop Purchase Process</p>",
+    "classKey": "sub-processes",
+    "returnActions": [
+      "happy",
+      "unhappy"
+    ],
+    "firstStepKey": "jondcobavon",
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "jondcobavon",
+    "name": "Order Pick",
+    "description": "<p>Order Pick</p>",
+    "classKey": "provider",
+    "nextStepIds": [
+      {
+        "action": "happy",
+        "stepKey": "bealisod"
+      }
+    ],
+    "authorizedOrgUnitKey": "bikeshop-desk",
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "bealisod",
+    "name": "Expedite",
+    "description": "<p>Expedite</p>",
+    "classKey": "provider",
+    "nextStepIds": [
+      {
+        "action": "happy"
+      }
+    ],
+    "authorizedOrgUnitKey": "bikeshop-shop",
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "makherkargs",
+    "name": "Bicycle Shop Rental Process",
+    "description": "<p>Bicycle Shop Purchase Process</p>",
+    "classKey": "sub-processes",
+    "returnActions": [
+      "happy",
+      "unhappy"
+    ],
+    "firstStepKey": "mmorliverara",
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "mmorliverara",
+    "name": "Order Pick",
+    "description": "<p>Order Pick</p>",
+    "classKey": "provider",
+    "nextStepIds": [
+      {
+        "action": "happy",
+        "stepKey": "hthel20044237"
+      }
+    ],
+    "authorizedOrgUnitKey": "bikeshop-desk",
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "hthel20044237",
+    "name": "Expedite",
+    "description": "<p>Expedite</p>",
+    "classKey": "provider",
+    "nextStepIds": [
+      {
+        "action": "happy"
+      }
+    ],
+    "authorizedOrgUnitKey": "bikeshop-shop",
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "ppqusiapangee",
+    "name": "Answer",
+    "description": "<p>Answer</p>",
+    "classKey": "provider",
+    "nextStepIds": [
+      {
+        "action": "happy"
+      },
+      {
+        "action": "unhappy"
+      }
+    ],
+    "ownerKey": "demo-user-08"
+  },
+  {
+    "key": "ja13daleo",
+    "name": "Order Pick",
+    "description": "<p>Order Pick</p>",
+    "classKey": "provider",
+    "nextStepIds": [
+      {
+        "action": "happy",
+        "stepKey": "tchbowledac"
+      }
+    ],
+    "authorizedOrgUnitKey": "bikeshop-desk",
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "ghasllosheyanouir",
+    "name": "Acceptance",
+    "description": "<p>Acceptance</p>",
+    "classKey": "consumer",
+    "nextStepIds": [
+      {
+        "action": "happy",
+        "stepKey": "bouranhuneprit"
+      },
+      {
+        "action": "unhappy",
+        "stepKey": "sthowg12319"
+      }
+    ],
+    "ownerKey": "bikeshop"
+  },
+  {
+    "key": "rin339998",
+    "name": "Initialize",
+    "description": "<p>Initialize</p>",
+    "classKey": "open",
+    "ownerKey": "argonaut"
+  },
+  {
+    "key": "ansattithe",
+    "name": "Personal Menu Master Detail",
+    "classKey": "master-detal",
+    "layout": "Master Detail",
+    "divider": "Vertical",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Navigation Menu",
+        "widgets": [
+          {
+            "widgetType": "Navigation Menu",
+            "name": "Navigation Menu",
+            "menuKey": "hamby234"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "simmubypsafr",
+    "name": "Generic Menu Master Detail",
+    "classKey": "master-detal",
+    "layout": "Master Detail",
+    "divider": "Vertical",
+    "ownerKey": "bikeshop",
+    "tabs": [
+      {
+        "name": "Navigation Menu",
+        "widgets": [
+          {
+            "widgetType": "Navigation Menu",
+            "name": "Navigation Menu",
+            "menuKey": "drdshayllily"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "igliiare",
+    "name": "Non-profit Menu Master Detail",
+    "classKey": "master-detal",
+    "layout": "Master Detail",
+    "divider": "Vertical",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Navigation Menu",
+        "widgets": [
+          {
+            "widgetType": "Navigation Menu",
+            "name": "Navigation Menu",
+            "menuKey": "drdshayllily"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "tcncofid",
+    "name": "Process Universe Tree Studio",
+    "classKey": "studio",
+    "layout": "Studio",
+    "model": "Class Model",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Process Universe",
+        "widgets": [
+          {
+            "widgetType": "Tree",
+            "name": "Class Model Tree",
+            "viewKey": "fothpokarth"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "ritiamay",
+    "name": "Process Universe Model Tree Master Detail",
+    "classKey": "master-detal",
+    "layout": "Master Detail",
+    "model": "Class Model",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Process Universe",
+        "widgets": [
+          {
+            "widgetType": "Tree",
+            "name": "Class Model Tree",
+            "viewKey": "fothpokarth"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "menlxikanonfe",
+    "name": "Process Model Tree Studio",
+    "classKey": "studio",
+    "layout": "Studio",
+    "model": "Process Model",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Propositions",
+        "widgets": [
+          {
+            "widgetType": "Schema Table",
+            "name": "Propositions Table",
+            "viewKey": "tuperedg"
+          }
+        ]
+      },
+      {
+        "name": "Processes",
+        "widgets": [
+          {
+            "widgetType": "Tree",
+            "name": "Process Tree",
+            "viewKey": "banb1deddilli"
+          }
+        ]
+      },
+      {
+        "name": "Organization",
+        "widgets": [
+          {
+            "widgetType": "Schema Table",
+            "name": "Organization Table",
+            "viewKey": "brffunonkel"
+          }
+        ]
+      },
+      {
+        "name": "Members",
+        "widgets": [
+          {
+            "widgetType": "Schema Table",
+            "name": "Members Table",
+            "viewKey": "brffunonkel"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "pyborerpilngos",
+    "name": "Members Table Master Detail",
+    "classKey": "master-detal",
+    "layout": "Master Detail",
+    "divider": "Vertical",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Members Table",
+        "widgets": [
+          {
+            "widgetType": "Schema Table",
+            "name": "Members Table",
+            "viewKey": "brffunonkel"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "chinammphakalaw",
+    "name": "Class Details Page",
+    "description": "<p>Do not remove. This is not an orphan.</p>",
+    "classKey": "pages",
+    "layout": "Page",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Class Details",
+        "widgets": [
+          {
+            "widgetType": "Schema Form",
+            "viewKey": "mpilalowathy"
+          }
+        ]
+      },
+      {
+        "name": "Raw",
+        "widgets": [
+          {
+            "widgetType": "Raw"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "smaraspaled",
+    "name": "Merged Ancestors Page",
+    "description": "<p>Do not remove. This is not an orphan.</p>",
+    "classKey": "pages",
+    "layout": "Page",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Details",
+        "widgets": [
+          {
+            "widgetType": "Class Schema Form"
+          }
+        ]
+      },
+      {
+        "name": "Raw",
+        "widgets": [
+          {
+            "widgetType": "Raw"
+          }
+        ]
+      },
+      {
+        "name": "Validate",
+        "widgets": [
+          {
+            "widgetType": "Validate"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "termbdryt",
+    "name": "Chart of Accounts Tree Master Detail",
+    "classKey": "master-detal",
+    "layout": "Master Detail",
+    "divider": "Vertical",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Chart of Accounts Tree",
+        "widgets": [
+          {
+            "widgetType": "Tree",
+            "name": "Chart of Accounts Tree",
+            "viewKey": "reroudorg2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "goreddminr",
+    "name": "Propositions Tree Master Detail",
+    "classKey": "master-detal",
+    "layout": "Master Detail",
+    "divider": "Vertical",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Propositions Tree",
+        "widgets": [
+          {
+            "widgetType": "Tree",
+            "name": "Propositions Tree",
+            "viewKey": "waakj1245"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "mm4nurerors",
+    "name": "Document Form Page",
+    "classKey": "pages",
+    "layout": "Page",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Document",
+        "widgets": [
+          {
+            "widgetType": "Document",
+            "name": "Document Form",
+            "viewKey": "watontcky"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "antuhrdly",
+    "name": "Members Table Master Detail",
+    "classKey": "master-detal",
+    "layout": "Master Detail",
+    "divider": "Vertical",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Members Table",
+        "widgets": [
+          {
+            "widgetType": "Schema Table",
+            "name": "Members Table",
+            "XviewKey": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "ggalnstpaxx",
+    "name": "Planning Calendar Page",
+    "classKey": "pages",
+    "layout": "Page",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Planing Calendar",
+        "widgets": [
+          {
+            "widgetType": "Calendar",
+            "name": "Calendar"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "riditprbt",
+    "name": "Backlog Table Page Master Detail",
+    "classKey": "master-detal",
+    "layout": "Master Detail",
+    "divider": "Vertical",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Backlog Table",
+        "widgets": [
+          {
+            "widgetType": "Schema Table",
+            "name": "Backlog Table",
+            "viewKey": "wrihellk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "xfu7bony",
+    "name": "Document Tree Master Detail",
+    "classKey": "master-detal",
+    "layout": "Master Detail",
+    "divider": "Vertical",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Document Tree",
+        "widgets": [
+          {
+            "widgetType": "Tree",
+            "name": "Document Tree",
+            "viewKey": "sptshrapa"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "baitlothh079",
+    "name": "Income Statement Page",
+    "classKey": "pages",
+    "layout": "Page",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Income Statement",
+        "widgets": [
+          {
+            "widgetType": "Income Statement"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "thilarto",
+    "name": "Balance Sheet Page",
+    "classKey": "pages",
+    "layout": "Page",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Balance Sheet",
+        "widgets": [
+          {
+            "widgetType": "Balance Sheet"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "psvoigizy",
+    "name": "Cash Flows Page",
+    "classKey": "pages",
+    "layout": "Page",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Cash Flows",
+        "widgets": [
+          {
+            "widgetType": "Cash Flows"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "talcamope38",
+    "name": "Members Page",
+    "classKey": "pages",
+    "layout": "Page",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Account",
+        "widgets": [
+          {
+            "widgetType": "Class Schema Form"
+          }
+        ]
+      },
+      {
+        "name": "Messaging",
+        "pageKey": "riditprbt"
+      },
+      {
+        "name": "Backlog",
+        "pageKey": "riditprbt"
+      },
+      {
+        "name": "Availability",
+        "widgets": [
+          {
+            "widgetType": "Calendar"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "pplezeacu11231",
+    "name": "Chart of Accounts Page",
+    "classKey": "pages",
+    "layout": "Page",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Account Details",
+        "widgets": [
+          {
+            "widgetType": "Class Schema Form"
+          }
+        ]
+      },
+      {
+        "name": "General Ledger",
+        "widgets": [
+          {
+            "widgetType": "Class Schema Form"
+          }
+        ]
+      },
+      {
+        "name": "Trial Balance",
+        "widgets": [
+          {
+            "widgetType": "Class Schema Form"
+          }
+        ]
+      },
+      {
+        "name": "Journal Entry",
+        "widgets": [
+          {
+            "widgetType": "Class Schema Form"
+          }
+        ]
+      },
+      {
+        "name": "Travel Expenes",
+        "widgets": [
+          {
+            "widgetType": "Class Schema Form"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "aiowodro",
+    "name": "Organizational Unit Page",
+    "classKey": "pages",
+    "layout": "Page",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Team Home",
+        "widgets": [
+          {
+            "widgetType": "Class Schema Form"
+          }
+        ]
+      },
+      {
+        "name": "Members",
+        "pageKey": "pyborerpilngos"
+      },
+      {
+        "name": "Backlog",
+        "pageKey": "riditprbt"
+      },
+      {
+        "name": "Availability",
+        "widgets": [
+          {
+            "widgetType": "Calendar"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "halalalarl",
+    "name": "Agreements Page",
+    "classKey": "pages",
+    "layout": "Page",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "We Are Provider",
+        "pageKey": "riditprbt"
+      },
+      {
+        "name": "We Are Consumer",
+        "pageKey": "riditprbt"
+      }
+    ]
+  },
+  {
+    "key": "kifehry5",
+    "name": "Backlog Form and History Page",
+    "classKey": "pages",
+    "layout": "Page",
+    "ownerKey": "argonaut",
+    "tabs": [
+      {
+        "name": "Backlog History",
+        "widgets": [
+          {
+            "widgetType": "Schema Form",
+            "viewKey": "dcurestway"
+          },
+          {
+            "widgetType": "Schema Table",
+            "viewKey": "kicewacerafute"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "fothpokarth",
+    "name": "Process Umiverse Tree View",
+    "description": "<p>Descibes the class model hierarchy, including a children array</p>",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "eaigrate",
+    "type": "object"
+  },
+  {
+    "key": "banb1deddilli",
+    "name": "Process Tree View",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "femandarpnonon",
+    "type": "object"
+  },
+  {
+    "key": "tuperedg",
+    "name": "Proposition Table View",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "taldedyd",
+    "properties": {
+      "name": {}
+    },
+    "baseClassKey": "propositions",
+    "type": "object"
+  },
+  {
+    "key": "brffunonkel",
+    "name": "Members Table View",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "motawins",
+    "nodesPageKey": "talcamope38",
+    "properties": {
+      "icon": {},
+      "name": {}
+    },
+    "baseClassKey": "accounts",
+    "type": "object"
+  },
+  {
+    "key": "mpilalowathy",
+    "name": "Class Form View",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "properties": {
+      "key": {
+        "title": "key",
+        "type": "string"
+      },
+      "title": {
+        "placeholder": "Provide a name",
+        "maxLength": 1000,
+        "minLength": 0,
+        "title": "Name",
+        "type": "string"
+      },
+      "description": {
+        "placholder": "Add a description",
+        "maxLength": 10000,
+        "contentMediaType": "text/html",
+        "minLength": 0,
+        "title": "Description",
+        "type": "string"
+      },
+      "classIcon": {
+        "maxLength": 2000,
+        "contentEncoding": "utf8",
+        "contentMediaType": "image/svg+xml",
+        "minLength": 0,
+        "title": "Class Icon",
+        "type": "string"
+      },
+      "superClassKey": {
+        "pattern": "[a-z][a-z0-9-]{0,17}",
+        "argoQuery": {
+          "selector": "Subclasses",
+          "where": {
+            "classKey": "universe"
+          },
+          "sortBy": "title"
+        },
+        "title": "Super Class",
+        "type": "string"
+      },
+      "required": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Required",
+        "type": "array"
+      },
+      "properties": {
+        "title": "Properties",
+        "type": "object"
+      }
+    },
+    "query": "classes",
+    "type": "object"
+  },
+  {
+    "key": "reroudorg2",
+    "name": "Chart of Accounts Tree View",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "mijesonongtheh",
+    "type": "object"
+  },
+  {
+    "key": "waakj1245",
+    "name": "Propositions Tree View",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "lesazytiugl",
+    "type": "object"
+  },
+  {
+    "key": "watontcky",
+    "name": "Document Form View",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "properties": {
+      "name": {},
+      "description": {},
+      "subParagraphIds": {
+        "items": {
+          "properties": {
+            "paragraphKey": {}
+          }
+        }
+      }
+    },
+    "baseClassKey": "paragraphs",
+    "type": "object"
+  },
+  {
+    "key": "wrihellk",
+    "name": "Backlog View",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "sg123378",
+    "properties": {
+      "startDate": {},
+      "currentStepKey": {},
+      "consumerKey": {},
+      "name": {}
+    },
+    "baseClassKey": "agreements",
+    "type": "object"
+  },
+  {
+    "key": "sptshrapa",
+    "name": "Document View",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "nochickn335",
+    "type": "object"
+  },
+  {
+    "key": "dcurestway",
+    "name": "Agreement Form View",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "sg123378",
+    "properties": {
+      "key": {},
+      "name": {},
+      "currentStepKey": {},
+      "consumerKey": {},
+      "startDate": {}
+    },
+    "baseClassKey": "agreements",
+    "type": "object"
+  },
+  {
+    "key": "kicewacerafute",
+    "name": "History Table View",
+    "classKey": "views",
+    "ownerKey": "argonaut",
+    "queryKey": "sg123378",
+    "properties": {
+      "key": {},
+      "name": {},
+      "currentStepKey": {},
+      "consumerKey": {},
+      "startDate": {}
+    },
+    "baseClassKey": "agreements",
+    "type": "object"
+  },
+  {
+    "key": "eaigrate",
+    "name": "Root Class Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Where Clause",
+    "subQueryIds": [
+      "yeacippperkth",
+      "latehemesplea3"
+    ],
+    "where": {
+      "key": "universe"
+    }
+  },
+  {
+    "key": "yeacippperkth",
+    "name": "Subclasses Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Where Clause",
+    "subQueryIds": [
+      "yeacippperkth",
+      "latehemesplea3"
+    ],
+    "where": {
+      "superClassKey": "$fk"
+    },
+    "sortBy": "title"
+  },
+  {
+    "key": "latehemesplea3",
+    "name": "Objects Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Where Clause",
+    "where": {
+      "classKey": "$fk"
+    },
+    "subQueryIds": [
+      "dishirelten",
+      "ckshens7777",
+      "mimamoyloveelar",
+      "sinobploxx",
+      "sreasfen",
+      "gaiindd77",
+      "sbetiny1"
+    ],
+    "sortBy": "name"
+  },
+  {
+    "key": "dishirelten",
+    "name": "Page.tabs.pageIds Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Context Object",
+    "idsArrayPath": {
+      "path": "$.tabs[*].pageId",
+      "indexName": "key"
+    },
+    "sortBy": "name"
+  },
+  {
+    "key": "ckshens7777",
+    "name": "Page.tabs.widgets.viewIds Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Context Object",
+    "idsArrayPath": {
+      "path": "$.tabs[*].widgets[*].viewId",
+      "indexName": "key"
+    },
+    "sortBy": "name"
+  },
+  {
+    "key": "mimamoyloveelar",
+    "name": "View.queryId Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Context Object",
+    "idsArrayPath": {
+      "path": "$.queryId",
+      "indexName": "key"
+    },
+    "sortBy": "name"
+  },
+  {
+    "key": "sinobploxx",
+    "name": "View.baseClassId Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Context Object",
+    "idsArrayPath": {
+      "path": "$.baseClassId",
+      "indexName": "key"
+    },
+    "sortBy": "name"
+  },
+  {
+    "key": "sbetiny1",
+    "name": "Query.subQueryIds Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Context Object",
+    "idsArrayPath": {
+      "path": "$.subQueryIds[*]",
+      "indexName": "key"
+    },
+    "sortBy": "name"
+  },
+  {
+    "key": "femandarpnonon",
+    "name": "Owned Processes Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Where Clause",
+    "subQueryIds": [
+      "sreasfen"
+    ],
+    "where": {
+      "classKey": "processes",
+      "ownerKey": "argonaut"
+    }
+  },
+  {
+    "key": "taldedyd",
+    "name": "Owned Propositions Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Subclasses",
+    "where": {
+      "classKey": "propositions",
+      "ownerKey": "$fk"
+    },
+    "idsArrayPath": {
+      "path": "$[*].key",
+      "indexName": "classId"
+    },
+    "sortBy": "name"
+  },
+  {
+    "key": "sreasfen",
+    "name": "Process.firstStepId Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Context Object",
+    "subQueryIds": [
+      "gaiindd77"
+    ],
+    "idsArrayPath": {
+      "path": "$.firstStepId",
+      "indexName": "key"
+    },
+    "sortBy": "name"
+  },
+  {
+    "key": "gaiindd77",
+    "name": "Step.nextStepIds.stepId Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Context Object",
+    "subQueryIds": [
+      "gaiindd77"
+    ],
+    "idsArrayPath": {
+      "path": "$.nextStepIds[*].stepId",
+      "indexName": "key"
+    },
+    "sortBy": "name"
+  },
+  {
+    "key": "motawins",
+    "name": "Members Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Owned Accounts",
+    "where": {
+      "key": "$fk"
+    },
+    "idsArrayPath": {
+      "path": "$[*].permissions[?(@.perm_name == 'active')].required_auth..accounts[*][?(@.permission == 'active')].actor",
+      "indexName": "key"
+    },
+    "sortBy": "name",
+    "nodesPageKey": "talcamope38"
+  },
+  {
+    "key": "tycterde",
+    "name": "Organizational Unit Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Where Clause",
+    "subQueryIds": [
+      "tycterde",
+      "alusboitt"
+    ],
+    "where": {
+      "classKey": "org-units"
+    },
+    "filter": {
+      "path": "$.permissions[?(@.perm_name == 'owner')].required_auth..accounts[*][?(@.permission == 'owner')].actor",
+      "equals": "$fk"
+    },
+    "sortBy": "name"
+  },
+  {
+    "key": "alusboitt",
+    "name": "Organizational Active Permission Users Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Context Object",
+    "idsArrayPath": {
+      "path": "$.permissions[?(@.perm_name == 'active')].required_auth..accounts[*][?(@.permission == 'active')].actor",
+      "indexName": "key"
+    },
+    "sortBy": "name"
+  },
+  {
+    "key": "mijesonongtheh",
+    "name": "Chart of Accounts Root Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Where Clause",
+    "nodesIcon": "ChartofAccountsRootQuery.svg",
+    "nodesPageKey": "pplezeacu11231",
+    "subQueryIds": [
+      "cthokogl"
+    ],
+    "where": {
+      "superClassKey": "balance-sheet"
+    },
+    "sortBy": "title"
+  },
+  {
+    "key": "cthokogl",
+    "name": "Chart of Accounts Sub Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Where Clause",
+    "nodesIcon": "ChartofAccountsRootQuery.svg",
+    "nodesPageKey": "pplezeacu11231",
+    "subQueryIds": [
+      "cthokogl"
+    ],
+    "where": {
+      "superClassKey": "$fk"
+    },
+    "sortBy": "title"
+  },
+  {
+    "key": "lesazytiugl",
+    "name": "Propositions Root Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Where Clause",
+    "subQueryIds": [
+      "nyondepo5",
+      "swaserin8as"
+    ],
+    "where": {
+      "superClassKey": "propositions"
+    },
+    "sortBy": "title"
+  },
+  {
+    "key": "nyondepo5",
+    "name": "Propositions Sub Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Where Clause",
+    "subQueryIds": [
+      "swaserin8as"
+    ],
+    "where": {
+      "superClassKey": "$fk"
+    },
+    "sortBy": "title"
+  },
+  {
+    "key": "swaserin8as",
+    "name": "Propositions Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Where Clause",
+    "where": {
+      "classKey": "$fk"
+    },
+    "sortBy": "name"
+  },
+  {
+    "key": "sg123378",
+    "name": "Backlog Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Where Clause",
+    "nodesPageKey": "kifehry5",
+    "where": {
+      "classKey": "agreements"
+    }
+  },
+  {
+    "key": "nochickn335",
+    "name": "First Paragraphs Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Where Clause",
+    "nodesPageKey": "mm4nurerors",
+    "where": {
+      "key": "$fk"
+    },
+    "idsArrayPath": {
+      "path": "$[*].subParagraphIds[*]",
+      "indexName": "key"
+    },
+    "subQueryIds": [
+      "nelownar"
+    ]
+  },
+  {
+    "key": "nelownar",
+    "name": "Subparagraphs Query",
+    "classKey": "queries",
+    "ownerKey": "argonaut",
+    "selector": "Context Object",
+    "nodesPageKey": "mm4nurerors",
+    "subQueryIds": [
+      "nelownar"
+    ],
+    "idsArrayPath": {
+      "path": "$.subParagraphIds[*]",
+      "indexName": "key"
+    }
+  },
+  {
+    "key": "hamby234",
+    "name": "Personal Menu",
+    "classKey": "menus",
+    "ownerKey": "argonaut",
+    "menuArr": [
+      {
+        "name": "Home",
+        "icon": "menu-home"
+      },
+      {
+        "name": "Backlog",
+        "icon": "menu-backlog",
+        "pageKey": "riditprbt"
+      },
+      {
+        "name": "Modeling",
+        "icon": "menu-modeling",
+        "pageKey": "",
+        "menuArr": [
+          {
+            "name": "Process Universe",
+            "pageKey": "tcncofid"
+          },
+          {
+            "name": "Process Model",
+            "pageKey": "menlxikanonfe"
+          },
+          {
+            "name": "Process Universe Tree",
+            "pageKey": "ritiamay"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "drdshayllily",
+    "name": "Generic Menu",
+    "classKey": "menus",
+    "ownerKey": "bikeshop",
+    "menuArr": [
+      {
+        "name": "Home",
+        "icon": "Home.svg"
+      },
+      {
+        "name": "Teams",
+        "icon": "Teams.svg",
+        "argoQuery": {
+          "sortBy": "name",
+          "selector": "Owned Accounts",
+          "nodesPageKey": "aiowodro"
+        }
+      },
+      {
+        "name": "Organization",
+        "icon": "Organization.svg",
+        "menuArr": [
+          {
+            "name": "Members",
+            "pageKey": "pyborerpilngos"
+          },
+          {
+            "name": "Proposistions",
+            "pageKey": "goreddminr"
+          },
+          {
+            "name": "Agreements",
+            "pageKey": "halalalarl"
+          },
+          {
+            "name": "Scheduling",
+            "pageKey": "ggalnstpaxx"
+          },
+          {
+            "name": "Backlog",
+            "pageKey": "riditprbt"
+          },
+          {
+            "name": "Document",
+            "pageKey": "xfu7bony"
+          },
+          {
+            "name": "Roadmap"
+          },
+          {
+            "name": "Features"
+          },
+          {
+            "name": "Use Cases"
+          }
+        ]
+      },
+      {
+        "name": "Accounting",
+        "icon": "Accounting.svg",
+        "menuArr": [
+          {
+            "name": "Bookkeeping",
+            "menuArr": [
+              {
+                "name": "Chart of Accounts",
+                "pageKey": "termbdryt"
+              },
+              {
+                "name": "Accounts Receivable"
+              },
+              {
+                "name": "Accounts Payable"
+              }
+            ]
+          },
+          {
+            "name": "Financial Statements",
+            "menuArr": [
+              {
+                "name": "Income",
+                "pageKey": "baitlothh079"
+              },
+              {
+                "name": "Comprehensive Income",
+                "pageKey": ""
+              },
+              {
+                "name": "Balance Sheet",
+                "pageKey": "thilarto"
+              },
+              {
+                "name": "Stockholders' Equity",
+                "pageKey": ""
+              },
+              {
+                "name": "Cash Flows",
+                "pageKey": "psvoigizy"
+              },
+              {
+                "name": "Notes to Financial Statements",
+                "pageKey": ""
+              }
+            ]
+          },
+          {
+            "name": "Managerial",
+            "pageKey": ""
+          },
+          {
+            "name": "Income Taxes",
+            "pageKey": ""
+          }
+        ]
+      },
+      {
+        "name": "Modeling",
+        "icon": "Modeling.svg",
+        "pageKey": "",
+        "menuArr": [
+          {
+            "name": "Process Universe Model",
+            "pageKey": "tcncofid"
+          },
+          {
+            "name": "Process Model",
+            "pageKey": "menlxikanonfe"
+          },
+          {
+            "name": "Process Universe Tree",
+            "pageKey": "ritiamay"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "s1ialanewor",
+    "name": "Argonaut",
+    "classKey": "paragraphs",
+    "ownerKey": "argonaut",
+    "description": "<p>Home</p>",
+    "subParagraphIds": [
+      "tpitmandj2300",
+      "sjoadgo1199",
+      "syoridas"
+    ]
+  },
+  {
+    "key": "tpitmandj2300",
+    "name": "What",
+    "classKey": "paragraphs",
+    "ownerKey": "argonaut",
+    "description": "<p>Contents one</p>",
+    "subParagraphIds": []
+  },
+  {
+    "key": "sjoadgo1199",
+    "name": "How",
+    "classKey": "paragraphs",
+    "ownerKey": "argonaut",
+    "description": "<p>Contents two</p>",
+    "subParagraphIds": []
+  },
+  {
+    "key": "syoridas",
+    "name": "Why",
+    "classKey": "paragraphs",
+    "ownerKey": "argonaut",
+    "description": "<p>Contents three</p>",
+    "subParagraphIds": []
+  },
+  {
+    "key": "paybundumagipi",
+    "name": "Bicyle Shop Document",
+    "classKey": "paragraphs",
+    "ownerKey": "argonaut",
+    "description": "<p>Home</p>",
+    "subParagraphIds": [
+      "nghivigog",
+      "decalers",
+      "arbumies"
+    ]
+  },
+  {
+    "key": "nghivigog",
+    "name": "What",
+    "classKey": "paragraphs",
+    "ownerKey": "argonaut",
+    "description": "<p>Contents one</p>",
+    "subParagraphIds": []
+  },
+  {
+    "key": "decalers",
+    "name": "How",
+    "classKey": "paragraphs",
+    "ownerKey": "argonaut",
+    "description": "<p>Contents two</p>",
+    "subParagraphIds": []
+  },
+  {
+    "key": "arbumies",
+    "name": "Why",
+    "classKey": "paragraphs",
+    "ownerKey": "argonaut",
+    "description": "<p>Contents three</p>",
+    "subParagraphIds": []
+  },
+  {
+    "key": "stmin1984",
+    "name": "Buy a Bike",
+    "classKey": "purchase-agree",
+    "amount": 100,
+    "currency": "EUR",
+    "startDate": "2021-05-10",
+    "expirationDate": "2025-05-10",
+    "consumerKey": "demo-user-09",
+    "providerKey": "bikeshop",
+    "assetKey": "stapomerna",
+    "propositionKey": "coutrcules",
+    "currentStepKey": "latiprine"
+  },
+  {
+    "key": "typruplooy32",
+    "name": "Rent a Bike",
+    "classKey": "rental-agree",
+    "amount": 10,
+    "currency": "EUR",
+    "unitOfTime": "Day",
+    "startDate": "2021-05-10",
+    "expirationDate": "2025-05-10",
+    "consumerKey": "demo-user-09",
+    "providerKey": "bikeshop",
+    "assetKey": "blkdghf1",
+    "propositionKey": "teantoux",
+    "currentStepKey": "hthel20044237"
+  },
+  {
+    "key": "wawarorky",
+    "name": "Fix a Bike",
+    "classKey": "service-agree",
+    "amount": 15,
+    "currency": "EUR",
+    "startDate": "2021-05-10",
+    "expirationDate": "2025-05-10",
+    "consumerKey": "demo-user-09",
+    "providerKey": "bikeshop",
+    "assetKey": "",
+    "propositionKey": "emcanrnewamy",
+    "currentStepKey": "jondcobavon"
+  },
+  {
+    "key": "peserabakl",
+    "name": "Let's meetup at the wattering hole",
+    "description": "<p>Do you have time for a get-together? </p>",
+    "classKey": "message-agree",
+    "startDate": "2021-05-10",
+    "expirationDate": "2025-05-10",
+    "consumerKey": "demo-user-09",
+    "providerKey": "bikeshop",
+    "assetKey": "",
+    "propositionKey": "spalastsensynen",
+    "currentStepKey": "truym12428"
+  },
+  {
+    "key": "stapomerna",
+    "title": "Blue Bike For Sale",
+    "classKey": "inventory",
+    "icon": "BlueBike.svg",
+    "value": 120.23,
+    "currency": "EUR"
+  },
+  {
+    "key": "iggusthracang",
+    "title": "Red Bike For Sale",
+    "classKey": "inventory",
+    "icon": "RedBike.svg",
+    "value": 130.25,
+    "currency": "EUR"
+  },
+  {
+    "key": "spallllinve",
+    "title": "Green Bike For Sale",
+    "classKey": "inventory",
+    "icon": "GreenBike.svg",
+    "value": 150.89,
+    "currency": "EUR"
+  },
+  {
+    "key": "blkdghf1",
+    "title": "Blue Bike For Rent",
+    "classKey": "for-sale",
+    "icon": "BlueBike.svg",
+    "value": 120.23,
+    "currency": "EUR"
+  },
+  {
+    "key": "vears14fourma",
+    "title": "Red Bike For Rent",
+    "classKey": "for-sale",
+    "icon": "RedBike.svg",
+    "value": 130.56,
+    "currency": "EUR"
+  },
+  {
+    "key": "gtyurarthe",
+    "title": "Green Bike For Rent",
+    "classKey": "for-sale",
+    "icon": "GreenBike.svg",
+    "value": 150.89,
+    "currency": "EUR"
+  }
+]

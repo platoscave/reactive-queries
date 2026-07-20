@@ -1,0 +1,46 @@
+[
+  {
+    "name": "class",
+    "color": "#8904B1"
+  },
+  {
+    "name": "object",
+    "color": "#008000"
+  },
+  {
+    "name": "label",
+    "color": "#EFEFEF"
+  },
+  {
+    "name": "classBeam",
+    "color": "#666666"
+  }, 
+  {
+    "name": "happy",
+    "color": "#AAEFAA"
+  },
+  {
+    "name": "unhappy",
+    "color": "#FFAAAA"
+  },
+  {
+    "name": "invalid",
+    "color": "#FFAAAA"
+  },
+  {
+    "name": "timeout",
+    "color": "#FFFFAA"
+  },
+  {
+    "name": "reject",
+    "color": "#FFAAAA"
+  },
+  {
+    "name": "default",
+    "color": "#EFEFEF"
+  },
+  {
+    "name": "active",
+    "color": "#AAEFAA"
+  }
+]

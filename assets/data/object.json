@@ -1,0 +1,13 @@
+[
+    {
+        "key": "spalastsensynen",
+        "name": "Message Proposition",
+        "description": "<p>Message Proposition</p>",
+        "classKey": "purchase-prop",
+        "ownerKey": "bikeshop",
+        "startDate": "2019-08-10T14:49:54.500",
+        "endDate": "2025-08-10T14:49:54.500",
+        "processKey": "manainoshs",
+        "assetIds": []
+    }
+]
